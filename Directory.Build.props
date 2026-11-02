@@ -3,10 +3,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>14</LangVersion>
-    <Version>0.1.3</Version>
-    <Authors>TBRK Label Studio contributors</Authors>
-    <Company>TBRK Label Studio</Company>
-    <Copyright>Copyright (C) 2026 TBRK Label Studio contributors</Copyright>
+    <Version>0.1.4</Version>
+    <Authors>TBRK contributors</Authors>
+    <Company>TBRK</Company>
+    <Copyright>Copyright (C) 2026 TBRK contributors</Copyright>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <Deterministic>true</Deterministic>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>

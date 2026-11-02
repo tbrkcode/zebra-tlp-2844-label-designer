@@ -1,10 +1,10 @@
-# TBRK Label Studio kullanım kılavuzu
+# Zebra TLP 2844 Label Designer kullanım kılavuzu
 
 Sürüm 0.1.3 · Windows 11 x64 · Türkçe kılavuz
 
 ## Başlangıç ve ilk etiket
 
-Uygulama ZIP dosyasını tümüyle bir klasöre çıkarın ve `TBRKLabelStudio.exe` dosyasını
+Uygulama ZIP dosyasını tümüyle bir klasöre çıkarın ve `ZebraTLP2844LabelDesigner.exe` dosyasını
 çalıştırın. .NET çalışma zamanı uygulamaya dahildir; ayrıca kurmanız gerekmez.
 `docs` ve `examples` klasörlerini EXE yanında tutun. Normal kullanım çevrimdışıdır.
 
@@ -178,4 +178,4 @@ veya yerel dosya yolu olup olmadığını kontrol edin.
 Bu sürümün doğrulama durumu `TEST_REPORT.md`, gerçek yazıcı kabul adımları
 `HARDWARE_ACCEPTANCE.md` içindedir. Fiziksel yazıcı testi bu teslimatta yapılmamıştır.
 
-ZIP dosyasını açın ve TBRKLabelStudio-0.1.3 klasöründeki TBRKLabelStudio.exe dosyasını çalıştırın. İlk açılış İngilizcedir. Türkçe için App settings ekranında Türkçe seçin.
+ZIP dosyasını açın ve ZebraTLP2844LabelDesigner-0.1.3 klasöründeki ZebraTLP2844LabelDesigner.exe dosyasını çalıştırın. İlk açılış İngilizcedir. Türkçe için App settings ekranında Türkçe seçin.

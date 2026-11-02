@@ -1,17 +1,19 @@
-# TBRK Label Studio
+# Zebra TLP 2844 Label Designer
 
 An offline, English-first Windows label designer for the **Zebra TLP 2844 EPL2**.
 Written in C#/.NET 10 LTS, WPF and MVVM, with SQLite storage. GPL-3.0-only.
 
-**Release 0.1.3 is a compiled functional first release, with hardware acceptance
+**Release 0.1.4 is a compiled functional first release, with hardware acceptance
 pending.** The Windows x64 self-contained EXE is supplied. Automated core tests
 and Windows cross-compilation were performed on Linux. The WPF window and a real
 Windows 11/USB TLP 2844 were not available to run here. No physical print test is
 claimed. See `docs/TEST_REPORT.md` for the exact evidence and limitations.
 
+Download the Windows application from [Releases](https://github.com/tbrkey/zebra-tlp-2844-label-designer/releases).
+
 ## Getting started
 
-Extract the ZIP and open the **TBRKLabelStudio-0.1.3** folder. Run **TBRKLabelStudio.exe**. The first launch of this release uses English, including on upgrades from Etiket Studio. Later language changes in App settings are remembered. Your existing local product database is reused.
+Extract the ZIP and open the **ZebraTLP2844LabelDesigner-0.1.4** folder. Run **ZebraTLP2844LabelDesigner.exe**. The first launch of this release uses English, including on upgrades from Etiket Studio. Later language changes in App settings are remembered. Your existing local product database is reused.
 
 ## 0.1.2 preview, printing and recovery
 
@@ -27,7 +29,7 @@ Extract the ZIP and open the **TBRKLabelStudio-0.1.3** folder. Run **TBRKLabelSt
 ## 0.1.1 language fix
 
 Close the previous app, extract this complete update into a new folder and run
-**English.cmd** to open directly in English. The title bar must say **0.1.3**.
+**English.cmd** to open directly in English. The title bar must say **0.1.4**.
 The existing product database and templates are retained. You can also choose
 **English** or **Türkçe** in App settings: changes apply immediately and save
 automatically. English resources are embedded in the main assembly, and the saved
@@ -35,9 +37,9 @@ app language overrides the operating-system thread language.
 
 ## Run on Windows 11 x64
 
-1. Extract the entire `TBRKLabelStudio-0.1.3-Windows11-x64.zip` archive into a writable folder.
+1. Extract the entire `ZebraTLP2844LabelDesigner-0.1.4-Windows11-x64.zip` archive into a writable folder.
 2. Follow `docs/PRINTER_SETUP_TR.html` to install the correct EPL TLP 2844 driver.
-3. Run `TBRKLabelStudio.exe`. A separate .NET runtime is not required. No internet
+3. Run `ZebraTLP2844LabelDesigner.exe`. A separate .NET runtime is not required. No internet
    connection, account or administrator rights are needed for normal operation.
 4. In **Yazıcı ayarları**, select the TLP 2844 queue, choose the media type, and run
    the **50 × 30 mm EPL2 test baskısı** with matching stock loaded.
@@ -68,7 +70,7 @@ must be validated on the target computer. The **2844-Z is a different ZPL model*
 
 | Path | Responsibility |
 | --- | --- |
-| `TBRKLabelStudio.sln` | Visual Studio solution |
+| `ZebraTLP2844LabelDesigner.sln` | Visual Studio solution |
 | `src/EtiketStudio.Core` | Domain, EPL2, barcode, SQLite and exchange services |
 | `src/EtiketStudio.Windows` | WPF MVVM application, renderer and printer transports |
 | `tests/EtiketStudio.Tests` | xUnit domain/integration/regression tests |
@@ -84,8 +86,8 @@ workload, or install the SDK version pinned in `global.json`. Open the solution
 and choose `EtiketStudio.Windows` as the startup project.
 
 ```powershell
-dotnet restore TBRKLabelStudio.sln
-dotnet build TBRKLabelStudio.sln -c Release
+dotnet restore ZebraTLP2844LabelDesigner.sln
+dotnet build ZebraTLP2844LabelDesigner.sln -c Release
 dotnet test tests/EtiketStudio.Tests -c Release
 .\scripts\Build-Windows.ps1
 ```

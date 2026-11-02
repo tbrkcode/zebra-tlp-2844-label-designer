@@ -1,7 +1,7 @@
 [CmdletBinding(SupportsShouldProcess=$true, ConfirmImpact='High')]
 param(
     [Parameter(Mandatory=$true)][string]$PrinterName,
-    [string]$Exe = (Join-Path (Split-Path -Parent $PSScriptRoot) 'TBRKLabelStudio.exe'),
+    [string]$Exe = (Join-Path (Split-Path -Parent $PSScriptRoot) 'ZebraTLP2844LabelDesigner.exe'),
     [string]$EplFile = (Join-Path (Split-Path -Parent $PSScriptRoot) 'examples\epl2\01-native-code128-50x30.epl'),
     [string]$OutputDirectory = (Join-Path $env:TEMP 'EtiketStudio-hardware-test'),
     [switch]$Print

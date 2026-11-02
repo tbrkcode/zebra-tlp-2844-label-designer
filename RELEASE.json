@@ -1,11 +1,11 @@
 {
-  "application": "TBRK Label Studio",
-  "version": "0.1.3",
+  "application": "Zebra TLP 2844 Label Designer",
+  "version": "0.1.4",
   "target": "Windows 11 x64",
   "framework": ".NET 10.0.14",
   "sdk": "10.0.403",
   "license": "GPL-3.0-only",
-  "exeSha256": "da851e6bd54b9516bd135aea50223dcca330cc0a888bed6b5b9568206f31f73c",
+  "exeSha256": "aea3dfa08377411ed66c022a4ad869635ad1a5a23c23c201cdd472c7699f540c",
   "automatedTests": {
     "passed": 103,
     "failed": 0,

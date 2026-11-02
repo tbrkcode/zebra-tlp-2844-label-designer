@@ -1,6 +1,6 @@
 # Release verification report
 
-TBRK Label Studio 0.1.3 · 2 November 2026
+Zebra TLP 2844 Label Designer 0.1.3 · 2 November 2026
 
 **The code builds and the portable automated suite passes. Windows UI execution
 and physical USB printing were not performed in this environment.** Treat the
@@ -93,3 +93,7 @@ to cancel a synchronous XPS Write operation from the app's RAW cancellation butt
 ## 0.1.3 release verification
 
 103 automated tests passed. The startup-language regression covers clean installs, upgrades from an older Turkish setting and explicit selection after upgrade. The Windows-x64 package was cross-compiled, and its executable and launcher paths were checked inside the single release folder. Physical printing and Windows UI execution remain pending.
+
+## 0.1.4 verification
+
+The renamed application builds without warnings or errors. All 103 portable tests pass. Physical TLP 2844 output and Windows GUI execution still require target-machine acceptance.

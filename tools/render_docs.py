@@ -14,6 +14,6 @@ for path in sorted((root/'docs').glob('*.md')):
     title=text.splitlines()[0].lstrip('# ')
     language='tr' if path.stem.endswith('_TR') else 'en'
     links=''.join(f'<a href="{stem}.html">{label}</a>' for stem,label in nav)
-    page=f'<!doctype html><html lang="{language}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)}</title><style>{css}</style></head><body><header><b>TBRK LABEL STUDIO</b><small>Desktop label design · TLP 2844 · EPL2</small><nav>{links}</nav></header><main>{content}<footer>TBRK Label Studio 0.1.3 · GPL-3.0-only · Offline documentation · 31 October 2026</footer></main></body></html>'
+    page=f'<!doctype html><html lang="{language}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)}</title><style>{css}</style></head><body><header><b>ZEBRA TLP 2844 LABEL DESIGNER</b><small>Desktop label design · TLP 2844 · EPL2</small><nav>{links}</nav></header><main>{content}<footer>Zebra TLP 2844 Label Designer 0.1.4 · GPL-3.0-only · Offline documentation · 31 October 2026</footer></main></body></html>'
     path.with_suffix('.html').write_text(page,encoding='utf-8')
 print('Offline HTML manuals generated.')

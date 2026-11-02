@@ -56,7 +56,7 @@ write an invented hardware pass. Scan the actual label and record the result bel
 | UPC-A raster | Scan `036000291452` (scanner UPC/EAN reporting mode recorded) | NOT RUN |
 | Code 128 raster | Scan `ABC-123456` | NOT RUN |
 | Code 39 raster | Scan `ABC-123` | NOT RUN |
-| QR raster | Scan `çğıİöşü / TBRK Label Studio` exactly | NOT RUN |
+| QR raster | Scan `çğıİöşü / Zebra TLP 2844 Label Designer` exactly | NOT RUN |
 | Three identical copies | Exactly 3 correct labels | NOT RUN |
 | Mixed batch | Each selected product and per-row quantity matches preview | NOT RUN |
 | Calibration on gap stock | Feed aligns to the next label; no skipped labels afterward | NOT RUN |

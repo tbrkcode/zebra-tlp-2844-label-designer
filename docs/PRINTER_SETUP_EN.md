@@ -13,7 +13,7 @@ computer for initial tests. Confirm the installed queue and its actual USB port
 in Windows printer settings; the application does not assume USB001.
 
 Load 50 × 30 mm labels with a 3 mm gap for the native test. Select the queue in
-TBRK Label Studio. Enable direct thermal for heat-sensitive stock without a ribbon;
+Zebra TLP 2844 Label Designer. Enable direct thermal for heat-sensitive stock without a ribbon;
 disable it for thermal transfer stock with a ribbon. Start at darkness 8, speed
 code 2. Calibrate gapped media with the dedicated `xa` button. Do not use gap
 calibration for continuous stock; set gap 0 for that stock. Black-mark stock is

@@ -29,7 +29,7 @@ public partial class App : Application
             if (e.Args.Contains("--send-epl")) { Shutdown(CommandLinePrint.Run(e.Args)); return; }
             instanceMutex = new Mutex(false, "Local\\EtiketStudio-" + Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(folder))));
             try { ownsMutex = instanceMutex.WaitOne(0); } catch (AbandonedMutexException) { ownsMutex = true; }
-            if (!ownsMutex) { MessageBox.Show(T.Get("AlreadyRunning"), "TBRK Label Studio"); Shutdown(); return; }
+            if (!ownsMutex) { MessageBox.Show(T.Get("AlreadyRunning"), "Zebra TLP 2844 Label Designer"); Shutdown(); return; }
             var store = new Store(Path.Combine(folder, "etiketstudio.db")); var settings = store.Load("settings", () => new AppSettings());
             string language = LanguageCatalog.StartupLanguage(store);
             int languageOption = Array.IndexOf(e.Args, "--language");

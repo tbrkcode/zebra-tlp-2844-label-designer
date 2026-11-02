@@ -28,7 +28,7 @@ internal static class WindowsSelfTest
             if (image.Width != 400 || image.Height != 240 || image.Packed.Length != 12000) throw new Exception("Raster dimensions");
             LabelRenderer.SavePng(image.Bitmap, Path.Combine(directory, "turkish-code128.png"));
             File.WriteAllBytes(Path.Combine(directory, "turkish-code128.epl"), Epl2.Raster(template, new(), image.Packed, image.Width, image.Height, 1));
-            template.Elements.Clear(); template.Elements.Add(new() { Kind = ElementKind.QrCode, Text = "çğıİöşü / TBRK Label Studio", X = 3, Y = 3, Width = 24, Height = 24 });
+            template.Elements.Clear(); template.Elements.Add(new() { Kind = ElementKind.QrCode, Text = "çğıİöşü / Zebra TLP 2844 Label Designer", X = 3, Y = 3, Width = 24, Height = 24 });
             var qr = renderer.Render(template, product, time, false); LabelRenderer.SavePng(qr.Bitmap, Path.Combine(directory, "turkish-qr.png"));
             var reversed = renderer.Render(template, product, time, true);
             bool Pixel(byte[] bytes, int x, int y) => (bytes[y * 50 + x / 8] & (0x80 >> (x % 8))) == 0;

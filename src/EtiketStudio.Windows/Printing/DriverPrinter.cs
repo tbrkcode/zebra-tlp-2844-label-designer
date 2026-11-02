@@ -36,7 +36,7 @@ public static class DriverPrinter
             FixedPage.SetLeft(image, 0); FixedPage.SetTop(image, 0); page.Children.Add(image);
             var content = new PageContent(); ((System.Windows.Markup.IAddChild)content).AddChild(page); document.Pages.Add(content);
         }
-        queue.CurrentJobSettings.Description = "TBRK Label Studio " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        queue.CurrentJobSettings.Description = "Zebra TLP 2844 Label Designer " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         var writer = PrintQueue.CreateXpsDocumentWriter(queue); writer.Write(document.DocumentPaginator, ticket);
     }
     public static Task RunSta(Action action)

@@ -130,8 +130,8 @@ public sealed class MainViewModel : ObservableObject
         SelectAll = Command(() => { foreach (var p in Products) p.Selected = true; });
         ClearSelection = Command(() => { foreach (var p in Products) p.Selected = false; });
         NewTemplate = Command(() => { if (ui.Confirm("NewTemplateConfirm")) ReplaceTemplate(LabelTemplate.Default(), true); });
-        OpenTemplate = Command(() => { var path = ui.OpenFile("TBRK Label Studio (*.etiket.json)|*.etiket.json|JSON (*.json)|*.json"); if (path is not null && ui.Confirm("NewTemplateConfirm")) ReplaceTemplate(JsonData.LoadTemplate(path), true); });
-        SaveTemplate = Command(() => { ui.EnsureValidInput(); Validation.Template(Template); var path = ui.SaveFile("TBRK Label Studio (*.etiket.json)|*.etiket.json", "label.etiket.json"); if (path is not null) { JsonData.SaveAtomic(path, JsonData.Serialize(Template)); store.Save("draft", Template); Status = T.Get("Saved"); } });
+        OpenTemplate = Command(() => { var path = ui.OpenFile("Zebra TLP 2844 Label Designer (*.etiket.json)|*.etiket.json|JSON (*.json)|*.json"); if (path is not null && ui.Confirm("NewTemplateConfirm")) ReplaceTemplate(JsonData.LoadTemplate(path), true); });
+        SaveTemplate = Command(() => { ui.EnsureValidInput(); Validation.Template(Template); var path = ui.SaveFile("Zebra TLP 2844 Label Designer (*.etiket.json)|*.etiket.json", "label.etiket.json"); if (path is not null) { JsonData.SaveAtomic(path, JsonData.Serialize(Template)); store.Save("draft", Template); Status = T.Get("Saved"); } });
         AddElement = new ActionCommand(parameter => Guard(() => Add((ElementKind)parameter!)), _ => !Busy);
         DeleteElement = Command(() => { Template.Elements.Remove(SelectedElement!); SelectedElement = null; }, () => SelectedElement is not null);
         DuplicateElement = Command(() => { var item = SelectedElement!.Clone(); item.Id = Guid.NewGuid().ToString("N"); item.X = Math.Min(Template.Width - item.Width, item.X + 1); item.Y = Math.Min(Template.Height - item.Height, item.Y + 1); Template.Elements.Add(item); SelectedElement = item; }, () => SelectedElement is not null);

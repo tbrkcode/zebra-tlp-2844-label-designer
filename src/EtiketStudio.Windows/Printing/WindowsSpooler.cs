@@ -53,7 +53,7 @@ public sealed class WindowsSpooler
     {
         Require(printer, true); cancellationToken.ThrowIfCancellationRequested();
         using var handle = Open(printer);
-        var document = new Native.Document { Name = "TBRK Label Studio " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), DataType = "RAW" };
+        var document = new Native.Document { Name = "Zebra TLP 2844 Label Designer " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), DataType = "RAW" };
         int job = Native.StartDocPrinter(handle, 1, ref document);
         if (job == 0) throw Error(Marshal.GetLastWin32Error());
         bool ended = false;
@@ -93,7 +93,7 @@ public sealed class WindowsSpooler
             {
                 var j = Marshal.PtrToStructure<Native.Job1>(buffer + i * size);
                 string state = (j.Status & (2u | 32u | 64u | 512u | 1024u)) != 0 ? "JobError" : (j.Status & 1u) != 0 ? "JobPaused" : (j.Status & 16u) != 0 ? "JobPrinting" : "JobQueued";
-                jobs.Add(new(j.Id, j.Document ?? "", T.Get(state), ((j.Document ?? "").StartsWith("TBRK Label Studio ", StringComparison.Ordinal) || (j.Document ?? "").StartsWith("Etiket Studio ", StringComparison.Ordinal))));
+                jobs.Add(new(j.Id, j.Document ?? "", T.Get(state), ((j.Document ?? "").StartsWith("Zebra TLP 2844 Label Designer ", StringComparison.Ordinal) || (j.Document ?? "").StartsWith("Etiket Studio ", StringComparison.Ordinal) || (j.Document ?? "").StartsWith("TBRK Label Studio ", StringComparison.Ordinal))));
             }
             return jobs;
         }

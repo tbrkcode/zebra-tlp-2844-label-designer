@@ -28,7 +28,7 @@ var products = new List<Product> {
 };
 foreach (var product in products) product.Barcode = Barcodes.Normalize(BarcodeKind.Ean13, product.Barcode[..12]);
 ProductExchange.Write(Path.Combine(root, "products.csv"), products); ProductExchange.Write(Path.Combine(root, "products.xlsx"), products);
-var testValues = new Dictionary<BarcodeKind, string> { [BarcodeKind.Ean13] = "4006381333931", [BarcodeKind.Ean8] = "96385074", [BarcodeKind.UpcA] = "036000291452", [BarcodeKind.Code128] = "ABC-123456", [BarcodeKind.Code39] = "ABC-123", [BarcodeKind.QrCode] = "çğıİöşü / TBRK Label Studio" };
+var testValues = new Dictionary<BarcodeKind, string> { [BarcodeKind.Ean13] = "4006381333931", [BarcodeKind.Ean8] = "96385074", [BarcodeKind.UpcA] = "036000291452", [BarcodeKind.Code128] = "ABC-123456", [BarcodeKind.Code39] = "ABC-123", [BarcodeKind.QrCode] = "çğıİöşü / Zebra TLP 2844 Label Designer" };
 foreach (var pair in testValues)
 {
     var t = new LabelTemplate { Width = 64, Height = 40, Gap = 3 }; var m = Barcodes.Matrix(pair.Key, pair.Value);

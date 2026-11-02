@@ -35,7 +35,7 @@ değildir; uygulama firmware yüklemez.
 1. İlk test için **50 mm genişlik × 30 mm yükseklik, 3 mm boşluk** olan tek sütun
    etiketi takın. Yazıcı kapalıyken kullanıcı kılavuzundaki doğru yükleme yolunu
    izleyin. Kapağı kapatın. Termal transfer kullanıyorsanız uygun ribon takın.
-2. TBRK Label Studio'da **Yazıcı ayarları → Yazıcıları yenile** ile kuyruğu seçin.
+2. Zebra TLP 2844 Label Designer'da **Yazıcı ayarları → Yazıcıları yenile** ile kuyruğu seçin.
 3. Ribonsuz termal kağıtta **Direkt termal** seçili olsun; ribonlu termal transferde
    seçimi kaldırın. Yoğunluk 8, hız kodu 2 ile başlayın.
 4. Aralıklı medya kullanırken **Etiket kalibrasyonu** ile `xa` gönderin. Bu işlem

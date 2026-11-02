@@ -1,4 +1,4 @@
-param([string]$Exe = (Join-Path (Split-Path -Parent $PSScriptRoot) 'TBRKLabelStudio.exe'), [string]$OutputDirectory = (Join-Path $env:TEMP 'EtiketStudio-Windows-tests'))
+param([string]$Exe = (Join-Path (Split-Path -Parent $PSScriptRoot) 'ZebraTLP2844LabelDesigner.exe'), [string]$OutputDirectory = (Join-Path $env:TEMP 'EtiketStudio-Windows-tests'))
 $ErrorActionPreference = 'Stop'
 $Exe = (Resolve-Path $Exe).Path
 $OutputDirectory = [System.IO.Path]::GetFullPath($OutputDirectory)

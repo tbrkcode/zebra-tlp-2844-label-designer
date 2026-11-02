@@ -1,2 +1,2 @@
 @echo off
-start "" "%~dp0TBRKLabelStudio.exe" --language tr-TR
+start "" "%~dp0ZebraTLP2844LabelDesigner.exe" --language tr-TR

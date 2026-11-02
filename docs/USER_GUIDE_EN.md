@@ -1,10 +1,10 @@
-# TBRK Label Studio user guide
+# Zebra TLP 2844 Label Designer user guide
 
 Version 0.1.3 · Windows 11 x64 · English guide
 
 ## Start and first label
 
-Extract the complete application ZIP and run `TBRKLabelStudio.exe`. The bundled
+Extract the complete application ZIP and run `ZebraTLP2844LabelDesigner.exe`. The bundled
 .NET runtime means you do not need to install .NET separately. Keep the `docs`
 and `examples` folders beside the EXE. Normal operation is offline.
 
@@ -130,7 +130,7 @@ USB drivers may not immediately report a disconnected cable, paper-out or an ope
 cover. The application reports the status Windows makes available.
 
 Use **Refresh queue** to inspect the selected queue, and **Cancel selected job** to
-cancel an TBRK Label Studio job. Windows may already have delivered some data; those
+cancel an Zebra TLP 2844 Label Designer job. Windows may already have delivered some data; those
 labels cannot be recalled. The bottom Stop submission button stops further RAW batch
 submissions between synchronous Windows calls. Use the Windows queue for a driver
 job; the app Stop submission button is disabled for that transport. Open Windows
@@ -165,4 +165,4 @@ displays use the workspace scrollbars. Technical errors are logged to
 See `TEST_REPORT.md` for the release's verification status and
 `HARDWARE_ACCEPTANCE.md` for the target-computer checklist.
 
-Open TBRKLabelStudio.exe inside the extracted TBRKLabelStudio-0.1.3 folder. This release starts in English on first launch. App settings remembers subsequent language choices.
+Open ZebraTLP2844LabelDesigner.exe inside the extracted ZebraTLP2844LabelDesigner-0.1.3 folder. This release starts in English on first launch. App settings remembers subsequent language choices.

@@ -1,8 +1,13 @@
 # Changelog
 
+## 0.1.4
+
+- Rename the app, executable and release folder to Zebra TLP 2844 Label Designer.
+- Rename the GitHub repository to zebra-tlp-2844-label-designer for model-based discovery.
+
 ## 0.1.3
 
-- Rename the application to TBRK Label Studio.
+- Rename the application to Zebra TLP 2844 Label Designer.
 - Start in English on first launch or upgrade and remember subsequent language selections.
 - Place the application and its support files in a single folder inside the ZIP.
 

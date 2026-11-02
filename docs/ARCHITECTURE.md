@@ -1,4 +1,4 @@
-# TBRK Label Studio architecture
+# Zebra TLP 2844 Label Designer architecture
 
 Status: implementation baseline, 31 October 2026. License: GPL-3.0-only.
 
