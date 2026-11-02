@@ -1,0 +1,4 @@
+﻿"Sku";"Name";"Barcode";"Price";"Description";"Category";"ImageBase64"
+"CAY-001";"Çay – Özel İçim";"8691234567890";"49.90";"Türkçe karakter örneği: ç ğ ı İ ö ş ü";"İçecek";""
+"SUT-002";"Şişe Süt";"4006381333931";"35.50";"";"Gıda";""
+"KHV-003";"Öğütülmüş Kahve";"5901234123457";"129.00";"";"İçecek";""

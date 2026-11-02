@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="InputErrors" xml:space="preserve">
+    <value>Correct the red fields before saving or printing.</value>
+  </data>
+  <data name="BatchMemory" xml:space="preserve">
+    <value>The selected labels exceed preview memory limits. Select a smaller batch.</value>
+  </data>
+  <data name="BarcodeUnreadable" xml:space="preserve">
+    <value>The barcode could not be decoded from the final print image. Remove overlapping elements and check quiet zones and size.</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>TBRK Label Studio</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>Label designer</value>
+  </data>
+  <data name="PrinterSettings" xml:space="preserve">
+    <value>Printer settings</value>
+  </data>
+  <data name="BarcodeTools" xml:space="preserve">
+    <value>Barcode tools</value>
+  </data>
+  <data name="BatchPrint" xml:space="preserve">
+    <value>Batch printing</value>
+  </data>
+  <data name="AppSettings" xml:space="preserve">
+    <value>App settings</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Product name</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+  <data name="Sku" xml:space="preserve">
+    <value>SKU</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ProductImage" xml:space="preserve">
+    <value>Product image</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Duplicate" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Choose image</value>
+  </data>
+  <data name="RemoveImage" xml:space="preserve">
+    <value>Remove image</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search products…</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Print preview</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Copies" xml:space="preserve">
+    <value>Copies</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="ClearSelection" xml:space="preserve">
+    <value>Clear selection</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Template name</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Width (mm)</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Height (mm)</value>
+  </data>
+  <data name="Gap" xml:space="preserve">
+    <value>Gap (mm)</value>
+  </data>
+  <data name="X" xml:space="preserve">
+    <value>X (mm)</value>
+  </data>
+  <data name="Y" xml:space="preserve">
+    <value>Y (mm)</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Font size (pt)</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>Font family</value>
+  </data>
+  <data name="Stroke" xml:space="preserve">
+    <value>Stroke (mm)</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="HumanReadable" xml:space="preserve">
+    <value>Show barcode text</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content / field</value>
+  </data>
+  <data name="BarcodeType" xml:space="preserve">
+    <value>Barcode type</value>
+  </data>
+  <data name="QrCode" xml:space="preserve">
+    <value>QR code</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="Rectangle" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Image / logo</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Product name</value>
+  </data>
+  <data name="ProductCode" xml:space="preserve">
+    <value>Product code</value>
+  </data>
+  <data name="DateTime" xml:space="preserve">
+    <value>Date and time</value>
+  </data>
+  <data name="Ean13" xml:space="preserve">
+    <value>EAN-13</value>
+  </data>
+  <data name="Ean8" xml:space="preserve">
+    <value>EAN-8</value>
+  </data>
+  <data name="Code128" xml:space="preserve">
+    <value>Code 128</value>
+  </data>
+  <data name="Code39" xml:space="preserve">
+    <value>Code 39</value>
+  </data>
+  <data name="UpcA" xml:space="preserve">
+    <value>UPC-A</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Object properties</value>
+  </data>
+  <data name="AddObject" xml:space="preserve">
+    <value>Add object</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Redo" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="BringFront" xml:space="preserve">
+    <value>Bring to front</value>
+  </data>
+  <data name="SendBack" xml:space="preserve">
+    <value>Send to back</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="ActualSize" xml:space="preserve">
+    <value>Actual size</value>
+  </data>
+  <data name="Snap" xml:space="preserve">
+    <value>Snap to 0.5 mm grid</value>
+  </data>
+  <data name="EditorHelp" xml:space="preserve">
+    <value>Drag tools onto the label or double-click to add. Drag objects to move them; edit measurements on the right.</value>
+  </data>
+  <data name="FieldsHelp" xml:space="preserve">
+    <value>Fields: {Name}, {Barcode}, {Sku}, {Price}, {Category}, {Description}, {Date}, {Time}</value>
+  </data>
+  <data name="ChooseObject" xml:space="preserve">
+    <value>Select an object to edit its properties.</value>
+  </data>
+  <data name="Printer" xml:space="preserve">
+    <value>Printer</value>
+  </data>
+  <data name="RefreshPrinters" xml:space="preserve">
+    <value>Refresh printers</value>
+  </data>
+  <data name="Darkness" xml:space="preserve">
+    <value>Darkness (0–15)</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>EPL2 speed code (1–4)</value>
+  </data>
+  <data name="Reverse" xml:space="preserve">
+    <value>Rotate label 180°</value>
+  </data>
+  <data name="DirectThermal" xml:space="preserve">
+    <value>Direct thermal (no ribbon)</value>
+  </data>
+  <data name="DriverMode" xml:space="preserve">
+    <value>Print through Windows driver</value>
+  </data>
+  <data name="RawModeHelp" xml:space="preserve">
+    <value>Default: EPL2 / RAW. Turkish text and QR codes are sent as an 8-dot/mm bitmap. Do not use for the 2844-Z.</value>
+  </data>
+  <data name="DriverHelp" xml:space="preserve">
+    <value>In driver mode, set speed, darkness and media type in Windows printing preferences. Label size is applied automatically; unsupported sizes stop printing.</value>
+  </data>
+  <data name="SpeedHelp" xml:space="preserve">
+    <value>TLP 2844: S1 = 1.5 ips; S2 = 2 ips; S3 = 2.5 ips; S4 = 3.5 ips (Zebra EPL guide).</value>
+  </data>
+  <data name="Calibration" xml:space="preserve">
+    <value>Calibrate labels</value>
+  </data>
+  <data name="NativeTest" xml:space="preserve">
+    <value>50 × 30 mm EPL2 test print</value>
+  </data>
+  <data name="ConfigPrint" xml:space="preserve">
+    <value>Print printer configuration</value>
+  </data>
+  <data name="WindowsQueue" xml:space="preserve">
+    <value>Windows print queue</value>
+  </data>
+  <data name="RefreshQueue" xml:space="preserve">
+    <value>Refresh queue</value>
+  </data>
+  <data name="CancelJob" xml:space="preserve">
+    <value>Cancel selected job</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Submission history</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Driver</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="JobId" xml:space="preserve">
+    <value>Job ID</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="Labels" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="ValidateBarcode" xml:space="preserve">
+    <value>Validate / add check digit</value>
+  </data>
+  <data name="BarcodeValid" xml:space="preserve">
+    <value>Valid barcode: {0}</value>
+  </data>
+  <data name="UseBarcode" xml:space="preserve">
+    <value>Apply to selected barcode</value>
+  </data>
+  <data name="NoBarcodeSelected" xml:space="preserve">
+    <value>First select a barcode or QR element in the designer.</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Dark theme</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Interface language</value>
+  </data>
+  <data name="RestartLanguage" xml:space="preserve">
+    <value>Language changes apply immediately and are saved automatically.</value>
+  </data>
+  <data name="DisplayScale" xml:space="preserve">
+    <value>Display size correction</value>
+  </data>
+  <data name="DisplayHelp" xml:space="preserve">
+    <value>Measure the 50 mm ruler in actual-size view. Correction = 50 / measured mm. This setting does not change print size.</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Back up database</value>
+  </data>
+  <data name="OpenDataFolder" xml:space="preserve">
+    <value>Open data folder</value>
+  </data>
+  <data name="SaveSettings" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>User guide</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Offline • Local SQLite • GPL-3.0</value>
+  </data>
+  <data name="Ready" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved.</value>
+  </data>
+  <data name="Imported" xml:space="preserve">
+    <value>Imported {0} products.</value>
+  </data>
+  <data name="Exported" xml:space="preserve">
+    <value>Export completed.</value>
+  </data>
+  <data name="Busy" xml:space="preserve">
+    <value>Working…</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Operation failed</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>An unexpected error occurred. Technical details were written to the log in the data folder.</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>{0}: enter a value between {1} and {2}.</value>
+  </data>
+  <data name="ProductRequired" xml:space="preserve">
+    <value>Product name and SKU are required.</value>
+  </data>
+  <data name="TextTooLong" xml:space="preserve">
+    <value>A field exceeds its maximum length.</value>
+  </data>
+  <data name="InvalidPrice" xml:space="preserve">
+    <value>Price must be non-negative with at most two decimal places. Do not use thousands separators.</value>
+  </data>
+  <data name="InvalidFile" xml:space="preserve">
+    <value>Invalid file format or content.</value>
+  </data>
+  <data name="FileTooLarge" xml:space="preserve">
+    <value>File too large. Limits: image 5 MB; template 20 MB; import 30 MB.</value>
+  </data>
+  <data name="CopiesRange" xml:space="preserve">
+    <value>Label quantity must be between 1 and 1000.</value>
+  </data>
+  <data name="BatchLimit" xml:space="preserve">
+    <value>A submission may contain at most 1000 labels.</value>
+  </data>
+  <data name="TemplateVersion" xml:space="preserve">
+    <value>This template version is unsupported.</value>
+  </data>
+  <data name="GapMinimum" xml:space="preserve">
+    <value>Gapped labels need at least a 2 mm gap; enter 0 for continuous media.</value>
+  </data>
+  <data name="TooManyObjects" xml:space="preserve">
+    <value>A label may contain at most 200 elements.</value>
+  </data>
+  <data name="OutsideLabel" xml:space="preserve">
+    <value>An element is outside the label. Correct its position or size.</value>
+  </data>
+  <data name="InvalidRaster" xml:space="preserve">
+    <value>Invalid print raster dimensions.</value>
+  </data>
+  <data name="DigitsOnly" xml:space="preserve">
+    <value>This barcode accepts digits 0–9 only.</value>
+  </data>
+  <data name="EmptyBarcode" xml:space="preserve">
+    <value>Barcode content cannot be empty.</value>
+  </data>
+  <data name="BarcodeLength" xml:space="preserve">
+    <value>Barcode must contain {0} or {1} digits.</value>
+  </data>
+  <data name="Checksum" xml:space="preserve">
+    <value>Incorrect barcode check digit. The number was not silently changed.</value>
+  </data>
+  <data name="InvalidBarcode" xml:space="preserve">
+    <value>Cannot encode barcode. Check the content and symbology.</value>
+  </data>
+  <data name="Code39Characters" xml:space="preserve">
+    <value>Code 39 accepts uppercase Latin letters, digits, space and - . $ / + %, up to 80 characters.</value>
+  </data>
+  <data name="Code128Characters" xml:space="preserve">
+    <value>Code 128 accepts printable ASCII, up to 80 characters. Use QR for Turkish content.</value>
+  </data>
+  <data name="QrTooLong" xml:space="preserve">
+    <value>QR content must not exceed 1200 UTF-8 bytes.</value>
+  </data>
+  <data name="BarcodeTooSmall" xml:space="preserve">
+    <value>Barcode area is too small. At least {0} mm width is needed; QR also needs that height.</value>
+  </data>
+  <data name="DatabaseVersion" xml:space="preserve">
+    <value>The database belongs to a newer application version.</value>
+  </data>
+  <data name="DuplicateSku" xml:space="preserve">
+    <value>Duplicate SKU. Each product needs a unique SKU.</value>
+  </data>
+  <data name="ImportHeaders" xml:space="preserve">
+    <value>Headers: Sku, Name, Barcode, Price; optional Description, Category, ImageBase64.</value>
+  </data>
+  <data name="ImportRow" xml:space="preserve">
+    <value>Row {0}: {1}</value>
+  </data>
+  <data name="ImportColumns" xml:space="preserve">
+    <value>Column count does not match the headers.</value>
+  </data>
+  <data name="TooManyRows" xml:space="preserve">
+    <value>Import/export supports at most 10,000 products.</value>
+  </data>
+  <data name="InvalidCsv" xml:space="preserve">
+    <value>Invalid CSV quoting or delimiters.</value>
+  </data>
+  <data name="ImportFormula" xml:space="preserve">
+    <value>Row {0}: convert Excel formulas to values first.</value>
+  </data>
+  <data name="ExcelImageLimit" xml:space="preserve">
+    <value>An image exceeds the Excel cell limit. Use CSV or reduce the image.</value>
+  </data>
+  <data name="NoPrinter" xml:space="preserve">
+    <value>No printer found. Check USB, printer power and the Windows driver, then refresh the list.</value>
+  </data>
+  <data name="SelectPrinter" xml:space="preserve">
+    <value>Select a printer first.</value>
+  </data>
+  <data name="NotEpl" xml:space="preserve">
+    <value>The selected queue is not recognized as the TLP 2844 EPL model. Select the correct EPL driver. EPL2 is not sent to a 2844-Z / ZPL queue.</value>
+  </data>
+  <data name="PrinterOffline" xml:space="preserve">
+    <value>Printer is offline, paused or in error. Check the Windows queue and USB connection.</value>
+  </data>
+  <data name="SpoolError" xml:space="preserve">
+    <value>Windows printing error ({0}). Check the queue and printer connection.</value>
+  </data>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>Printer access denied. Check Windows printing permissions.</value>
+  </data>
+  <data name="SpoolUnavailable" xml:space="preserve">
+    <value>Windows Print Spooler is unavailable. Start the service and retry.</value>
+  </data>
+  <data name="DriverSize" xml:space="preserve">
+    <value>The driver did not accept this label size or printable area. Set a custom Windows paper size or use EPL2.</value>
+  </data>
+  <data name="DriverUnavailable" xml:space="preserve">
+    <value>Cannot access the Windows printer driver.</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>Submitted to Windows (job {0}). Physical output is not verified.</value>
+  </data>
+  <data name="SubmittedDriver" xml:space="preserve">
+    <value>Submitted to the Windows driver. Physical output is not verified.</value>
+  </data>
+  <data name="PartialSubmission" xml:space="preserve">
+    <value>Submission stopped. Previously submitted labels may have printed. Check the queue and labels before retrying.</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Submitted</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Submission failed / outcome uncertain</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancellation requested</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Submitting / outcome unverified</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>Delete the selected product?</value>
+  </data>
+  <data name="NewTemplateConfirm" xml:space="preserve">
+    <value>Discard unsaved design changes?</value>
+  </data>
+  <data name="ImportConfirm" xml:space="preserve">
+    <value>Products with matching SKUs will be updated. Continue importing?</value>
+  </data>
+  <data name="CalibrationConfirm" xml:space="preserve">
+    <value>Calibration advances media. Ensure gapped labels are loaded. Continue?</value>
+  </data>
+  <data name="TestConfirm" xml:space="preserve">
+    <value>One test label for 50 × 30 mm stock with a 3 mm gap will print. Continue?</value>
+  </data>
+  <data name="PrintSummary" xml:space="preserve">
+    <value>{0} labels • {1} products • {2}</value>
+  </data>
+  <data name="PreviewHelp" xml:space="preserve">
+    <value>This preview uses the image that will be submitted. Check barcodes and dimensions.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoProductsSelected" xml:space="preserve">
+    <value>Select at least one product to print.</value>
+  </data>
+  <data name="NoProduct" xml:space="preserve">
+    <value>Add or select a product first.</value>
+  </data>
+  <data name="NoImage" xml:space="preserve">
+    <value>No image selected. Attach an image or provide a product image.</value>
+  </data>
+  <data name="TextOverflow" xml:space="preserve">
+    <value>Text does not fit: {0}. Increase the field size or reduce the font size.</value>
+  </data>
+  <data name="ImageFormat" xml:space="preserve">
+    <value>Invalid image. Use PNG, JPEG or BMP, up to 4096 × 4096 pixels.</value>
+  </data>
+  <data name="EmptyLabel" xml:space="preserve">
+    <value>Add at least one element to print.</value>
+  </data>
+  <data name="EplExport" xml:space="preserve">
+    <value>Save EPL2 file</value>
+  </data>
+  <data name="PngExport" xml:space="preserve">
+    <value>Save preview as PNG</value>
+  </data>
+  <data name="BatchHelp" xml:space="preserve">
+    <value>Select products and set a quantity on each row. Confirm printing after preview. Use Select all for the entire imported list.</value>
+  </data>
+  <data name="SampleProduct" xml:space="preserve">
+    <value>Sample product – Tea</value>
+  </data>
+  <data name="SampleCategory" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="SaveProductFirst" xml:space="preserve">
+    <value>Save the new or changed product first.</value>
+  </data>
+  <data name="NoJob" xml:space="preserve">
+    <value>Select a queued job from this application to cancel.</value>
+  </data>
+  <data name="QueueHelp" xml:space="preserve">
+    <value>Disappearance from the queue does not prove physical printing. Some drivers do not immediately report USB disconnection.</value>
+  </data>
+  <data name="JobQueued" xml:space="preserve">
+    <value>Queued</value>
+  </data>
+  <data name="JobPrinting" xml:space="preserve">
+    <value>Printing</value>
+  </data>
+  <data name="JobPaused" xml:space="preserve">
+    <value>Paused</value>
+  </data>
+  <data name="JobError" xml:space="preserve">
+    <value>Error / offline</value>
+  </data>
+  <data name="ImageAttached" xml:space="preserve">
+    <value>Image attached</value>
+  </data>
+  <data name="NoImageAttached" xml:space="preserve">
+    <value>No image</value>
+  </data>
+  <data name="PreviewNeedsProduct" xml:space="preserve">
+    <value>This template uses product data. Select a product above. If none exist, add one in Products. Demonstration data is never printed.</value>
+  </data>
+  <data name="PreviewNoPrinter" xml:space="preserve">
+    <value>No Windows printer was found. Connect the printer, install its driver, then refresh. Preview and export remain available.</value>
+  </data>
+  <data name="PreviewSelectPrinter" xml:space="preserve">
+    <value>Select a printer above to print.</value>
+  </data>
+  <data name="PreviewPrinterUnset" xml:space="preserve">
+    <value>No printer selected</value>
+  </data>
+  <data name="DriverCancelHelp" xml:space="preserve">
+    <value>Cancel driver-mode jobs in the Windows print queue. Stop submission in the app applies only to EPL2.</value>
+  </data>
+  <data name="DriverSubmitting" xml:space="preserve">
+    <value>Submitting through the Windows driver. Open the Windows queue to cancel.</value>
+  </data>
+  <data name="BusyClose" xml:space="preserve">
+    <value>An operation is running. You can stop EPL2 submission or open the Windows queue. Close the app when the operation ends.</value>
+  </data>
+  <data name="DiscardOnClose" xml:space="preserve">
+    <value>Changes could not be saved:
+{0}
+
+Exit and discard unsaved settings and design changes? Choose No to return and correct them.</value>
+  </data>
+  <data name="DiscardProduct" xml:space="preserve">
+    <value>The product form has unsaved changes. Exit and discard these product changes?</value>
+  </data>
+  <data name="RestoreBackup" xml:space="preserve">
+    <value>Restore backup</value>
+  </data>
+  <data name="RestoreConfirm" xml:space="preserve">
+    <value>The backup will replace products, settings, the draft and print history. A safety backup of current data will be saved first. The app will close after restoration. Continue?</value>
+  </data>
+  <data name="RestoreComplete" xml:space="preserve">
+    <value>Backup restored. Reopen the app.
+Safety backup of previous data:
+{0}</value>
+  </data>
+  <data name="InvalidBackup" xml:space="preserve">
+    <value>This is not a valid TBRK Label Studio backup, or it cannot be restored. Existing data was not changed.</value>
+  </data>
+  <data name="AutoBackupHelp" xml:space="preserve">
+    <value>A backup is taken on the first launch each day. The latest 7 daily startup backups are kept in Backups. Manual and pre-restore backups are not automatically deleted.</value>
+  </data>
+  <data name="AutoBackupFailed" xml:space="preserve">
+    <value>The automatic backup failed. You can continue using the app; make a manual backup in App settings and check disk space.</value>
+  </data>
+  <data name="AlreadyRunning" xml:space="preserve">
+    <value>TBRK Label Studio is already running. Use the existing window on the taskbar.</value>
+  </data>
+  <data name="StopSubmission" xml:space="preserve">
+    <value>Stop submission</value>
+  </data>
+</root>

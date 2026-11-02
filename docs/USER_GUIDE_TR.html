@@ -1,0 +1,182 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TBRK Label Studio kullanım kılavuzu</title><style>body{margin:0;background:#f3f6fa;color:#182536;font:16px/1.65 system-ui,Segoe UI,sans-serif}header{background:#152333;color:#fff;padding:28px max(24px,calc((100vw - 980px)/2))}header b{font-size:24px;letter-spacing:2px}header small{display:block;color:#8ee2cd}nav{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0 0}nav a{color:#d8f1e8;font-size:13px;text-decoration:none}main{max-width:920px;margin:26px auto 60px;background:white;border:1px solid #dce3ec;border-radius:14px;padding:30px 40px;box-shadow:0 8px 30px #15233306}h1{font-size:32px;line-height:1.2;margin-top:0}h2{margin-top:34px;font-size:22px;color:#087f70}h3{font-size:18px}a{color:#087f70}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto}td,th{border:1px solid #dce3ec;padding:10px 12px;text-align:left;vertical-align:top}th{background:#edf5f3}tr:nth-child(even){background:#f8fafb}code{background:#edf1f5;padding:2px 5px;border-radius:4px;font-size:.9em;overflow-wrap:anywhere}pre{background:#152333;color:#ecf6f2;padding:18px;border-radius:8px;overflow:auto}pre code{background:transparent;color:inherit;padding:0;white-space:pre}blockquote{border-left:4px solid #087f70;margin-left:0;padding-left:18px}li{margin:5px 0}footer{color:#5c6e82;font-size:12px;border-top:1px solid #dce3ec;margin-top:40px;padding-top:16px}@media(max-width:700px){main{margin:12px;padding:22px}h1{font-size:26px}}@media print{body{background:white;font-size:11pt}header,nav{display:none}main{max-width:none;margin:0;padding:0;border:0;box-shadow:none}h2{break-after:avoid}tr{break-inside:avoid}a{color:inherit}pre{white-space:pre-wrap}table{display:table}}</style></head><body><header><b>TBRK LABEL STUDIO</b><small>Desktop label design · TLP 2844 · EPL2</small><nav><a href="USER_GUIDE_TR.html">Türkçe</a><a href="USER_GUIDE_EN.html">English</a><a href="PRINTER_SETUP_TR.html">Yazıcı kurulumu</a><a href="PRINTER_SETUP_EN.html">Printer setup</a><a href="TEST_REPORT.html">Test report</a><a href="HARDWARE_ACCEPTANCE.html">Hardware acceptance</a><a href="ARCHITECTURE.html">Architecture</a></nav></header><main><h1 id="tbrk-label-studio-kullanm-klavuzu">TBRK Label Studio kullanım kılavuzu</h1>
+<p>Sürüm 0.1.3 · Windows 11 x64 · Türkçe kılavuz</p>
+<h2 id="baslangc-ve-ilk-etiket">Başlangıç ve ilk etiket</h2>
+<p>Uygulama ZIP dosyasını tümüyle bir klasöre çıkarın ve <code>TBRKLabelStudio.exe</code> dosyasını
+çalıştırın. .NET çalışma zamanı uygulamaya dahildir; ayrıca kurmanız gerekmez.
+<code>docs</code> ve <code>examples</code> klasörlerini EXE yanında tutun. Normal kullanım çevrimdışıdır.</p>
+<p>Önce yazıcı kurulum kılavuzunu uygulayın. <strong>Yazıcı ayarları</strong> ekranında TLP 2844 EPL
+kuyruğunu seçin. Ribonsuz, direkt termal etiket için <strong>Direkt termal (ribonsuz)</strong>
+seçili olsun. Termal transfer etiket ve ribon kullanıyorsanız seçimi kaldırın.
+Başlangıçta yoğunluk 8 ve hız kodu 2 kullanın. 50 × 30 mm etiket ve 3 mm boşluk
+olan ruloyu taktıktan sonra <strong>50 × 30 mm EPL2 test baskısı</strong> düğmesine basın.
+Onayladığınızda gerçek bir Code 128 etiketi gönderilir. Basılan barkodun tarama
+sonucu <code>123456789012</code> olmalıdır. Kuyruğa gönderilmesi fiziksel baskı kanıtı değildir.</p>
+<h2 id="urun-yonetimi">Ürün yönetimi</h2>
+<p><strong>Ürünler → Yeni</strong> ile ürün adı ve stok kodu girin. Barkod, fiyat, kategori,
+açıklama ve görsel ekleyebilirsiniz. <strong>Kaydet</strong> düğmesine basın. Stok kodları
+benzersiz olmalıdır. Fiyat negatif olamaz; en fazla iki ondalık basamak kullanın.
+Mevcut ürünü değiştirmek için satırını seçin, alanları düzenleyin ve başka satıra
+geçmeden <strong>Kaydet</strong> düğmesine basın. <strong>Sil</strong>, onayınızla ürünü kaldırır. Şablonlar
+silinmez. Arama kutusu ürün adı, stok kodu, barkod ve kategoriyi tarar.</p>
+<p>PNG, JPEG ve BMP görselleri kullanılabilir. Görsel başına en fazla 5 MB ve
+4096 × 4096 piksel desteklenir. Ürün görseli veritabanında saklanır. Tasarımdaki
+resim nesnesi önce kendisine eklenmiş görseli, yoksa seçili ürünün görselini
+kullanır. Termal baskı siyah beyazdır.</p>
+<h2 id="excel-ve-csv-islemleri">Excel ve CSV işlemleri</h2>
+<p><strong>İçe aktar</strong> ve <strong>Dışa aktar</strong>, <code>.xlsx</code> ve <code>.csv</code> dosyalarını destekler. <code>.xls</code>
+dosyalarını önce Excel ile <code>.xlsx</code> biçimine dönüştürün. Excel dosyasının ilk
+çalışma sayfası okunur. Hazır örnekler <code>examples/products.xlsx</code> ve
+<code>examples/products.csv</code> içindedir.</p>
+<table>
+<thead>
+<tr>
+<th>Başlık</th>
+<th>İçerik</th>
+<th>Zorunlu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sku / Stok kodu</td>
+<td>Benzersiz ürün kodu</td>
+<td>Evet</td>
+</tr>
+<tr>
+<td>Name / Ürün adı</td>
+<td>Ürün adı</td>
+<td>Evet</td>
+</tr>
+<tr>
+<td>Barcode / Barkod</td>
+<td>Barkod verisi; baştaki sıfırları korumak için metin hücresi kullanın</td>
+<td>Sütun zorunlu; barkod basılana kadar boş olabilir</td>
+</tr>
+<tr>
+<td>Price / Fiyat</td>
+<td><code>12,50</code> veya <code>12.50</code>; binlik ayırıcı kullanmayın</td>
+<td>Evet</td>
+</tr>
+<tr>
+<td>Description / Açıklama</td>
+<td>Açıklama</td>
+<td>Hayır</td>
+</tr>
+<tr>
+<td>Category / Kategori</td>
+<td>Kategori</td>
+<td>Hayır</td>
+</tr>
+<tr>
+<td>ImageBase64</td>
+<td>Base64 biçiminde gömülü görsel</td>
+<td>Hayır</td>
+</tr>
+</tbody>
+</table>
+<p>CSV için UTF-8, isteğe bağlı BOM, virgül/noktalı virgül ayırıcıları, tırnaklı
+alanlar ve çok satırlı açıklamalar desteklenir. Excel barkod ve stok kodlarını
+metin olarak dışa aktarır. Excel'in daha önce sildiği baştaki sıfırlar geri
+getirilemez; girişten önce hücre biçimini <strong>Metin</strong> yapın. Formülleri içe aktarmadan
+önce değerlere dönüştürün. Güvenmediğiniz formül benzeri metinleri paylaşırken
+XLSX dışa aktarmayı tercih edin; bazı tablo programları CSV alanlarını formül
+olarak yorumlayabilir.</p>
+<p>İçe aktarmada tüm satırlar kontrol edilir. Aynı stok kodu mevcutsa ürün güncellenir;
+yeni kod eklenir. Dosya içinde aynı stok kodunun tekrarı reddedilir. Hata oluşursa
+işlem kısmen kaydedilmez. En fazla 10.000 satır işlenir. Büyük Base64 görselleri
+Excel hücre sınırını aşabilir; bu durumda CSV kullanın veya görseli küçültün.</p>
+<h2 id="etiket-tasarlama">Etiket tasarlama</h2>
+<p><strong>Etiket tasarımı</strong> ekranında şablon adı, genişlik, yükseklik ve etiket aralığını
+belirleyin. Genişlik ve yükseklik etiketin yüzey ölçüsüdür; boşluk ayrıca yazılır.
+<code>examples/templates</code> klasöründe üç örnek vardır. <strong>Aç</strong> ile yükleyebilir, <strong>Kaydet</strong>
+ile <code>.etiket.json</code> dosyası oluşturabilirsiniz. Şablona eklenen görseller JSON
+içinde saklandığı için ayrı resim dosyasına ihtiyaç duyulmaz.</p>
+<p>Soldaki aracı etikete sürükleyin veya çift tıklayın. Nesneyi seçip sürükleyerek
+taşıyın. Sağ panelde X/Y konumu, genişlik/yükseklik, yazı tipi, punto, kalınlık,
+çizgi kalınlığı, barkod türü ve barkod alt yazısı düzenlenir. Tüm konumlar mm'dir.
+<strong>Çoğalt</strong>, <strong>Sil</strong>, <strong>Öne getir</strong>, <strong>Arkaya gönder</strong> nesneleri yönetir. Tuvalde
+seçili nesneyi ok tuşlarıyla 0,5 mm taşıyabilir, Delete ile silebilirsiniz.
+Ctrl+Z / Ctrl+Y tasarım değişikliklerini geri alır/yineler. Izgaraya hizalama
+0,5 mm adım kullanır. Nesne boyutunu sağ panelden değiştirin.</p>
+<p>Metin, barkod, QR kod, çizgi, dikdörtgen, resim/logo, fiyat, ürün adı, ürün kodu,
+tarih ve saat nesneleri vardır. Metin ve barkod içeriğinde şu alanlar kullanılabilir:
+<code>{Name}</code>, <code>{Barcode}</code>, <code>{Sku}</code>, <code>{Price}</code>, <code>{Category}</code>, <code>{Description}</code>, <code>{Date}</code>,
+<code>{Time}</code>. Fiyat Türk lirası biçimindedir. Tarih/saat bilgisayar saatinden gelir;
+bir baskı grubundaki bütün etiketler önizleme öncesinde alınan aynı zamanı kullanır.</p>
+<p>Code 128 yazdırılabilir ASCII karakterlerini, Code 39 büyük Latin harflerini,
+rakamları ve desteklenen işaretlerini kabul eder. Türkçe barkod içeriği için QR
+kullanın. EAN-13, EAN-8 ve UPC-A numarası tam ya da yalnızca son kontrol hanesi
+eksik olarak girilebilir. Eksik kontrol hanesi oluşturulan barkoda eklenir;
+yanlış tam numara sessizce değiştirilmez, baskı engellenir. Ürün kaydı otomatik
+değişmez. <strong>Barkod araçları</strong> ile numarayı doğrulayabilir ve tasarımda seçili
+barkod nesnesine uygulayabilirsiniz.</p>
+<p>Kırmızı görünen nesneleri baskıdan önce düzeltin. Etiket dışına çıkan nesne,
+alana sığmayan metin veya çok küçük barkod baskıyı durdurur. Barkod çizgileri tam
+yazıcı noktalarına hizalanır; sığdırmak için ezilmez. Barkodun beyaz boşluklarını
+başka nesnelerle kapatmayın.</p>
+<h2 id="tekli-ve-toplu-bask">Tekli ve toplu baskı</h2>
+<p>Adedi belirleyip <strong>Baskı önizleme</strong> düğmesine basın. Sabit metin, doğrudan girilmiş
+barkod, eklenmiş logo ve tarih içeren etiketler için ürün kaydı zorunlu değildir.
+Şablonda ürün adı, fiyat, stok kodu, ürün görseli veya <code>{Barcode}</code> gibi alanlar varsa
+önizleme penceresinin üstünden gerçek bir ürün seçin. Seçilmezse açıklama gösterilir;
+örnek ürün bilgileri baskıya veya EPL2 dosyasına gönderilmez.</p>
+<p>Önizleme penceresinde <strong>Yazıcı</strong> listesinden yazıcıyı seçin. Yeni bağladıysanız
+<strong>Yazıcıları yenile</strong> düğmesine basın. Yazıcı olmadan geçerli etiketin önizlemesi ve
+PNG/EPL2 dışa aktarımı çalışır. Yazdırırken hata olursa açıklama aynı pencerede kalır.
+<strong>Yazdır</strong>, tüm görüntüler hazır ve yazıcı seçili olduğunda etkinleşir. <strong>Toplu baskı</strong> ekranında ürünleri işaretleyip her satır için
+adet yazabilirsiniz. <strong>Tümünü seç</strong> mevcut ürün kataloğunun tamamını seçer; bu
+seçime daha önce kayıtlı ürünler de dahildir. Sadece son içe aktardığınız ürünler
+basılacaksa ilgili satırları ayrıca seçin.</p>
+<p>Tüm ürünler baskı öncesinde doğrulanır. <strong>Önceki / Sonraki</strong> ile önizlemeleri
+inceleyin. <strong>Yazdır</strong> gerçek Windows kuyruğuna gönderir; <strong>İptal</strong> göndermez.
+Önizlemedeki görüntüyü PNG, grubun tamamını ikili EPL2 dosyası olarak kaydedebilirsiniz.
+Önizleme ve yazdırma aynı siyah beyaz görüntüyü kullanır; 180° yön değişikliği de
+önizlemeye yansır.</p>
+<p><strong>Gerçek boyut</strong> görünümü Windows ekran ölçeklemesini esas alır. Önizlemedeki
+50 mm cetveli fiziksel cetvelle ölçün. <strong>Program ayarları → Ekran boyut düzeltmesi</strong>
+alanına <code>50 / ölçülen mm</code> yazın. Bu yalnızca ekrandaki boyutu düzeltir. Baskı her
+zaman yazıcının 8 nokta/mm çözünürlüğünü kullanır.</p>
+<p>Varsayılan yol <strong>EPL2 / RAW</strong>'dır. <strong>Windows sürücüsüyle yazdır</strong> seçilirse XPS
+yoluyla Windows sürücüsü kullanılır. Bu yolda hız, yoğunluk ve medya türünü
+Windows yazdırma tercihlerinden ayarlayın. Sürücü etiket boyutunu ve baskı alanını
+kabul etmezse etiket ölçeklenmez, işlem durdurulur.</p>
+<p>Tek işlemde en fazla 1000 etiket gönderilir. Büyük etiketlerde önizleme belleği
+128 MB sınırını aşarsa ürünleri daha küçük gruplara ayırın.</p>
+<h2 id="kuyruk-ve-hatalar">Kuyruk ve hatalar</h2>
+<p>Kuyruğa kabul edilen işe Windows numarası verilir. İşin kuyruktan kaybolması,
+fiziksel etiketin çıktığını kanıtlamaz. Etiketi gözle ve barkod okuyucuyla kontrol
+edin. Eski USB sürücüleri bağlantı kesilmesini veya medya bitmesini hemen
+bildirmeyebilir. Program Windows'un sağladığı durumu gösterir.</p>
+<p><strong>Kuyruğu yenile</strong> seçili yazıcının işlerini getirir. <strong>Seçili işi iptal et</strong>,
+bu uygulamanın gönderdiği işi iptal etmeyi ister; yazıcıya ulaşmış etiketler geri
+alınamaz. Alt çubuktaki <strong>Gönderimi durdur</strong>, RAW toplu gönderimde sonraki işlemleri durdurur;
+devam eden eşzamanlı Windows çağrısının dönmesi beklenebilir. Sürücü işini Windows
+kuyruğundan iptal edin. Sürücü modunda uygulama içi gönderim iptali pasiftir;
+<strong>Windows kuyruğunu aç</strong> işlemi gönderim sırasında da kullanılabilir. Bir hata sonrasında otomatik tekrar yapılmaz. Yeniden
+denemeden önce basılmış etiketleri ve bekleyen işleri kontrol edin.</p>
+<p><strong>Gönderim geçmişi</strong>, gönderilen ve başarısız/sonucu belirsiz işleri kaydeder.
+Çökme sonrası kalan “Gönderiliyor” kaydı yeniden gönderilmez.</p>
+<h2 id="ayarlar-ve-yedekleme">Ayarlar ve yedekleme</h2>
+<p>Koyu tema anında uygulanır. İngilizce arayüz için <strong>Program ayarları → English</strong>
+seçin; değişiklik hemen uygulanır ve otomatik kaydedilir. Yeniden başlatma gerekmez.
+Türkçeye dönmek için <strong>Türkçe</strong> seçin. Ayrıca paketteki <strong>English.cmd</strong> dosyası
+uygulamayı doğrudan İngilizce, <strong>Turkce.cmd</strong> Türkçe açar.</p>
+<p>Veriler <code>%LOCALAPPDATA%\EtiketStudio\etiketstudio.db</code> dosyasındadır. <strong>Veritabanını
+yedekle</strong>, WAL içindeki kaydedilmiş işlemleri de içeren tutarlı bir yedek üretir.
+Günün ilk açılışında <code>Backups</code> klasörüne otomatik yedek alınır; son yedi günlük
+başlangıç yedeği saklanır. Bu yedek gün içindeki son değişiklikleri içermez;
+önemli değişikliklerden sonra ayrıca elle yedek alın.</p>
+<p><strong>Program ayarları → Yedekten geri yükle</strong> ile <code>.db</code> yedeğini seçin. Onaydan önce
+kaydedilmemiş ürün ve tasarım değişikliklerinizi kaydedin. Seçilen yedek doğrulanır,
+mevcut veriler <code>Backups/before-restore-...db</code> dosyasına yedeklenir ve geri yükleme
+tek işlemde uygulanır. Hatalı dosya veya işlem hatası mevcut verileri kısmen değiştirmez.
+Başarılı geri yüklemeden sonra program kapanır; uygulamayı yeniden açın.
+Elle alınmış ve geri yükleme öncesi yedekler otomatik silinmez.</p>
+<p>Kapanırken hatalı ayar varsa açıklama gösterilir: <strong>Hayır</strong> ile düzeltmeye dönün,
+<strong>Evet</strong> ile kaydedilmemiş ayar ve tasarım değişikliklerinden vazgeçerek çıkın.
+Kaydedilmemiş ürün formu için ayrıca onay sorulur. Daha önce kaydedilmiş ürünler silinmez.
+Küçük ekranda veya yüksek Windows ölçeğinde çalışma alanındaki kaydırma çubuklarını kullanın.
+<code>application.log</code> teknik hata ayrıntılarını içerir; paylaşmadan önce ürün bilgisi
+veya yerel dosya yolu olup olmadığını kontrol edin.</p>
+<p>Bu sürümün doğrulama durumu <code>TEST_REPORT.md</code>, gerçek yazıcı kabul adımları
+<code>HARDWARE_ACCEPTANCE.md</code> içindedir. Fiziksel yazıcı testi bu teslimatta yapılmamıştır.</p>
+<p>ZIP dosyasını açın ve TBRKLabelStudio-0.1.3 klasöründeki TBRKLabelStudio.exe dosyasını çalıştırın. İlk açılış İngilizcedir. Türkçe için App settings ekranında Türkçe seçin.</p><footer>TBRK Label Studio 0.1.3 · GPL-3.0-only · Offline documentation · 31 October 2026</footer></main></body></html>

@@ -1,0 +1,130 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EPL2 protocol and verification notes</title><style>body{margin:0;background:#f3f6fa;color:#182536;font:16px/1.65 system-ui,Segoe UI,sans-serif}header{background:#152333;color:#fff;padding:28px max(24px,calc((100vw - 980px)/2))}header b{font-size:24px;letter-spacing:2px}header small{display:block;color:#8ee2cd}nav{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0 0}nav a{color:#d8f1e8;font-size:13px;text-decoration:none}main{max-width:920px;margin:26px auto 60px;background:white;border:1px solid #dce3ec;border-radius:14px;padding:30px 40px;box-shadow:0 8px 30px #15233306}h1{font-size:32px;line-height:1.2;margin-top:0}h2{margin-top:34px;font-size:22px;color:#087f70}h3{font-size:18px}a{color:#087f70}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto}td,th{border:1px solid #dce3ec;padding:10px 12px;text-align:left;vertical-align:top}th{background:#edf5f3}tr:nth-child(even){background:#f8fafb}code{background:#edf1f5;padding:2px 5px;border-radius:4px;font-size:.9em;overflow-wrap:anywhere}pre{background:#152333;color:#ecf6f2;padding:18px;border-radius:8px;overflow:auto}pre code{background:transparent;color:inherit;padding:0;white-space:pre}blockquote{border-left:4px solid #087f70;margin-left:0;padding-left:18px}li{margin:5px 0}footer{color:#5c6e82;font-size:12px;border-top:1px solid #dce3ec;margin-top:40px;padding-top:16px}@media(max-width:700px){main{margin:12px;padding:22px}h1{font-size:26px}}@media print{body{background:white;font-size:11pt}header,nav{display:none}main{max-width:none;margin:0;padding:0;border:0;box-shadow:none}h2{break-after:avoid}tr{break-inside:avoid}a{color:inherit}pre{white-space:pre-wrap}table{display:table}}</style></head><body><header><b>TBRK LABEL STUDIO</b><small>Desktop label design · TLP 2844 · EPL2</small><nav><a href="USER_GUIDE_TR.html">Türkçe</a><a href="USER_GUIDE_EN.html">English</a><a href="PRINTER_SETUP_TR.html">Yazıcı kurulumu</a><a href="PRINTER_SETUP_EN.html">Printer setup</a><a href="TEST_REPORT.html">Test report</a><a href="HARDWARE_ACCEPTANCE.html">Hardware acceptance</a><a href="ARCHITECTURE.html">Architecture</a></nav></header><main><h1 id="epl2-protocol-and-verification-notes">EPL2 protocol and verification notes</h1>
+<h2 id="target-and-sources">Target and sources</h2>
+<p>Target: original Zebra <strong>TLP 2844</strong>, EPL2 page language, 8 dots/mm, maximum
+832-dot printable width. This is not a TLP 2844-Z implementation. Baseline media
+limits are conservative for the unexpanded model. There is no ZPL generator and
+no firmware update operation.</p>
+<p>The implementation was checked against Zebra's <strong>EPL Programming Guide,
+14245L-003 Rev. A</strong>, downloaded from the official Zebra documentation site,
+and these primary references (reviewed 31 October 2026):</p>
+<ul>
+<li><a href="https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/software/epl2-pm-en.pdf">EPL programming guide</a></li>
+<li><a href="https://cpws.zebra.com/cpws/docs/eltron/gw_command.htm">Zebra GW bit polarity</a></li>
+<li><a href="https://support.zebra.com/article/000016453">Zebra GW command applicability</a></li>
+<li><a href="https://support.zebra.com/article/000014807">Zebra speed command</a></li>
+<li><a href="https://support.zebra.com/article/000015691">Zebra configuration print</a></li>
+<li><a href="https://learn.microsoft.com/windows/win32/printdocs/startdocprinter">Microsoft StartDocPrinter</a></li>
+<li><a href="https://learn.microsoft.com/windows-hardware/drivers/print/raw-data-type">Microsoft RAW data type</a></li>
+</ul>
+<h2 id="commands-emitted">Commands emitted</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Use</th>
+<th>Guide page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>R0,0</code> then <code>q&lt;width&gt;</code></td>
+<td>Reset prior reference; set label buffer width. q follows R because a later R overrides q.</td>
+<td>137–138, 143</td>
+</tr>
+<tr>
+<td><code>Q&lt;height&gt;,&lt;gap&gt;</code></td>
+<td>Label face height and separate gap; 0 gap means continuous stock.</td>
+<td>139–142</td>
+</tr>
+<tr>
+<td><code>S1</code>–<code>S4</code></td>
+<td>Model-specific speed code.</td>
+<td>144</td>
+</tr>
+<tr>
+<td><code>D0</code>–<code>D15</code></td>
+<td>Density.</td>
+<td>88</td>
+</tr>
+<tr>
+<td><code>ZT</code></td>
+<td>Fixed buffer direction; optional rotation is applied in the raster beforehand.</td>
+<td>170</td>
+</tr>
+<tr>
+<td><code>OD</code> or <code>O</code></td>
+<td>Direct thermal or thermal transfer; disable other option modes.</td>
+<td>132–133</td>
+</tr>
+<tr>
+<td><code>N</code></td>
+<td>Clear buffer after configuration, before image data.</td>
+<td>122</td>
+</tr>
+<tr>
+<td><code>GW0,0,&lt;bytesPerRow&gt;,&lt;rows&gt;,&lt;binary&gt;</code></td>
+<td>Unformatted binary monochrome image payload.</td>
+<td>110</td>
+</tr>
+<tr>
+<td><code>P&lt;count&gt;</code></td>
+<td>Print copies.</td>
+<td>135</td>
+</tr>
+<tr>
+<td><code>A...</code> / <code>B...</code></td>
+<td>Native ASCII and Code 128 diagnostic only. Code 128 auto uses type <code>1</code>.</td>
+<td>44–57</td>
+</tr>
+<tr>
+<td><code>xa</code></td>
+<td>Gap AutoSense; moves media, does not enter dump mode.</td>
+<td>167</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td>Print configuration.</td>
+<td>148</td>
+</tr>
+</tbody>
+</table>
+<p>For the 2824/2844 speed table: code 1 = 1.5 ips, 2 = 2 ips, 3 = 2.5 ips,
+4 = 3.5 ips. Do not reuse the GK/GX speed table. The interface exposes speed
+<strong>codes</strong> and explains the mapping.</p>
+<p>The native 50 × 30 mm fixture has width 400 dots, height 240 dots and gap 24 dots.
+Its Code 128 is <code>123456789012</code>; it is deliberately ASCII. Normal user labels use
+the raster path so Turkish Unicode and QR do not depend on firmware features.</p>
+<h2 id="binary-contract">Binary contract</h2>
+<p>Each row is <code>ceil(widthDots / 8)</code> bytes. Rows run top to bottom, bits run MSB
+first, <strong>0 means black, 1 means white</strong>, and unused right-hand bits are white.
+The payload has exactly <code>rowBytes × heightDots</code> bytes. LF, NUL and 0xff inside it
+are image data, not delimiters. A final newline precedes the <code>P</code> command.</p>
+<p>Never read/export an EPL raster file through a text encoder, <code>Out-File</code>, or a
+text editor that may rewrite line endings. Send bytes unchanged. Native A/B
+diagnostics are ASCII text; the GW fixtures are binary despite their <code>.epl</code> suffix.</p>
+<h2 id="software-verification">Software verification</h2>
+<p>Tests compare exact command framing and packed bit patterns, including white
+padding and embedded LF/NUL bytes. All six symbologies are encoded and decoded
+with ZXing to verify content. The WPF print preflight also decodes each barcode
+crop from the final composite raster, rejecting overlays or rendering damage that
+prevent decoding. This is software evidence, not an ISO barcode grade or a test of
+the printer's thermal head, media, transport or firmware.</p>
+<p><code>examples/epl2</code> contains a native test plus six raster tests on <strong>64 × 40 mm,
+3 mm gap</strong> stock. PBM files are lossless visual counterparts; PBM polarity is
+opposite to GW. Do not send PBM files to the printer. Each raster fixture prints
+one barcode without a caption, so identify the file and expected value in the
+hardware form before sending it. All provided fixtures use direct thermal mode;
+for thermal transfer use the app's media setting and export a fresh EPL file.</p>
+<h2 id="transport-semantics">Transport semantics</h2>
+<p>The RAW path uses OpenPrinter → StartDocPrinter(<code>RAW</code>) → StartPagePrinter →
+checked/chunked WritePrinter → EndPagePrinter → EndDocPrinter. On failure it
+attempts AbortPrinter and does not retry. A job ID proves Windows acceptance;
+it does not acknowledge physical output. Enumeration and status come from the
+Windows spooler, not raw USB discovery or a bidirectional EPL status channel.</p>
+<p>The driver path separately uses WPF/XPS; it never sends XPS bytes to WritePrinter.
+It checks the accepted print ticket and imageable area and uses 100% scale.</p>
+<h2 id="required-physical-verification">Required physical verification</h2>
+<p>Physical printer testing was <strong>not run</strong> in the Linux build environment. Use
+<code>scripts/Test-Printer.ps1</code> on the target Windows computer, inspect and scan the
+labels, and record the driver/firmware/stock in <code>HARDWARE_ACCEPTANCE.md</code>. Do not
+change that status based solely on a unit test or spool job ID.</p><footer>TBRK Label Studio 0.1.3 · GPL-3.0-only · Offline documentation · 31 October 2026</footer></main></body></html>

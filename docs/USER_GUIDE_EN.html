@@ -1,0 +1,170 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TBRK Label Studio user guide</title><style>body{margin:0;background:#f3f6fa;color:#182536;font:16px/1.65 system-ui,Segoe UI,sans-serif}header{background:#152333;color:#fff;padding:28px max(24px,calc((100vw - 980px)/2))}header b{font-size:24px;letter-spacing:2px}header small{display:block;color:#8ee2cd}nav{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0 0}nav a{color:#d8f1e8;font-size:13px;text-decoration:none}main{max-width:920px;margin:26px auto 60px;background:white;border:1px solid #dce3ec;border-radius:14px;padding:30px 40px;box-shadow:0 8px 30px #15233306}h1{font-size:32px;line-height:1.2;margin-top:0}h2{margin-top:34px;font-size:22px;color:#087f70}h3{font-size:18px}a{color:#087f70}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto}td,th{border:1px solid #dce3ec;padding:10px 12px;text-align:left;vertical-align:top}th{background:#edf5f3}tr:nth-child(even){background:#f8fafb}code{background:#edf1f5;padding:2px 5px;border-radius:4px;font-size:.9em;overflow-wrap:anywhere}pre{background:#152333;color:#ecf6f2;padding:18px;border-radius:8px;overflow:auto}pre code{background:transparent;color:inherit;padding:0;white-space:pre}blockquote{border-left:4px solid #087f70;margin-left:0;padding-left:18px}li{margin:5px 0}footer{color:#5c6e82;font-size:12px;border-top:1px solid #dce3ec;margin-top:40px;padding-top:16px}@media(max-width:700px){main{margin:12px;padding:22px}h1{font-size:26px}}@media print{body{background:white;font-size:11pt}header,nav{display:none}main{max-width:none;margin:0;padding:0;border:0;box-shadow:none}h2{break-after:avoid}tr{break-inside:avoid}a{color:inherit}pre{white-space:pre-wrap}table{display:table}}</style></head><body><header><b>TBRK LABEL STUDIO</b><small>Desktop label design · TLP 2844 · EPL2</small><nav><a href="USER_GUIDE_TR.html">Türkçe</a><a href="USER_GUIDE_EN.html">English</a><a href="PRINTER_SETUP_TR.html">Yazıcı kurulumu</a><a href="PRINTER_SETUP_EN.html">Printer setup</a><a href="TEST_REPORT.html">Test report</a><a href="HARDWARE_ACCEPTANCE.html">Hardware acceptance</a><a href="ARCHITECTURE.html">Architecture</a></nav></header><main><h1 id="tbrk-label-studio-user-guide">TBRK Label Studio user guide</h1>
+<p>Version 0.1.3 · Windows 11 x64 · English guide</p>
+<h2 id="start-and-first-label">Start and first label</h2>
+<p>Extract the complete application ZIP and run <code>TBRKLabelStudio.exe</code>. The bundled
+.NET runtime means you do not need to install .NET separately. Keep the <code>docs</code>
+and <code>examples</code> folders beside the EXE. Normal operation is offline.</p>
+<p>The first launch uses English. For Turkish, open <strong>App settings</strong> and select <strong>Türkçe</strong>. The app applies your choice immediately and remembers it.</p>
+<p>First follow the printer setup guide. In <strong>Printer settings</strong>, choose the installed
+EPL TLP 2844 queue. For direct thermal labels without a ribbon, enable <strong>Direkt
+termal (ribonsuz)</strong>. For thermal transfer stock with a ribbon, disable it. Start
+with darkness 8 and speed code 2. Load 50 × 30 mm gap stock with a 3 mm gap before
+running the native test button. It submits one real Code 128 label. Scan the output:
+the expected value is <code>123456789012</code>.</p>
+<h2 id="products">Products</h2>
+<p>Open <strong>Products</strong>. Click <strong>New</strong>, enter a product name and SKU, then optionally a
+barcode, price, category, description and image. Click <strong>Save</strong>. SKU must be
+unique. Prices are non-negative, with at most two decimal places. Select an
+existing row to edit it; click <strong>Save</strong> before selecting another row. <strong>Delete</strong>
+asks before removing a product. Product deletion does not delete reusable label
+templates. The search field matches product name, SKU, barcode and category.</p>
+<p>PNG, JPEG and BMP images are embedded in the local database, up to 5 MB and
+4096 × 4096 pixels. The label image object uses its own attached image first,
+otherwise the selected product image. Images print in black and white.</p>
+<h2 id="csv-and-excel">CSV and Excel</h2>
+<p>Use <strong>Import</strong> or <strong>Export</strong> for <code>.csv</code> and <code>.xlsx</code>. Legacy <code>.xls</code> is not
+supported; save it as <code>.xlsx</code> first. The first worksheet of an Excel file is read.
+Example files are supplied in <code>examples/products.csv</code> and <code>examples/products.xlsx</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sku</td>
+<td>Unique stock code, stored as text</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Product name</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Barcode</td>
+<td>Barcode content; keep it as text to retain leading zeros</td>
+<td>Yes, may be blank until a barcode is printed</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>Decimal price, e.g. <code>12.50</code> or <code>12,50</code>, without grouping separators</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>Category</td>
+<td>No</td>
+</tr>
+<tr>
+<td>ImageBase64</td>
+<td>Embedded image encoded as Base64</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Turkish headers <code>Stok kodu</code>, <code>Ürün adı</code>, <code>Barkod</code>, <code>Fiyat</code>, <code>Açıklama</code>, <code>Kategori</code>
+are also accepted. CSV supports UTF-8, BOM, comma/semicolon separators, quoted
+fields, escaped quotes and multiline descriptions. Excel exports store identifiers
+as text. A numeric Excel cell cannot recover leading zeros already discarded by
+Excel; format barcodes as text before entry. Convert formulas to values before
+importing. For exchanging untrusted formula-like text, prefer the XLSX exporter,
+which writes text cells explicitly; CSV readers may interpret such text as formulas.</p>
+<p>Import validates the complete file before changing products. Existing matching
+SKUs are updated; new SKUs are added. A failed transaction leaves no partial import.
+Duplicate SKUs within one input file are rejected. The row limit is 10,000. XLSX
+cells cannot hold large Base64 images; use CSV or smaller images when notified.</p>
+<h2 id="design-labels">Design labels</h2>
+<p>Open <strong>Label designer</strong>. Set template name, width, height and gap. Dimensions
+refer to the label face; the gap is separate. Three templates are included under
+<code>examples/templates</code>. Use <strong>Open</strong> to load one and <strong>Save</strong> to save a <code>.etiket.json</code>.
+Images attached to templates travel inside the JSON file.</p>
+<p>Drag a tool from the left onto the label, or double-click it. Click an object to
+select it; drag to move it. The right panel edits X/Y and size in millimetres,
+content, font, point size, bold, barcode type, stroke and readable barcode text.
+Use <strong>Duplicate</strong>, <strong>Delete</strong>, <strong>Bring to front</strong> and <strong>Send to back</strong> for object/layer changes.
+Arrow keys move a selected canvas object by 0.5 mm; Delete removes it. Ctrl+Z and
+Ctrl+Y undo/redo design changes. Optional snapping uses a 0.5 mm step.</p>
+<p>Built-in fields: product name, SKU, price and computer date/time. In text/barcode
+content you may use <code>{Name}</code>, <code>{Barcode}</code>, <code>{Sku}</code>, <code>{Price}</code>, <code>{Category}</code>,
+<code>{Description}</code>, <code>{Date}</code> and <code>{Time}</code>. Price formatting is Turkish lira. All
+products in one print operation use one timestamp captured before preview.</p>
+<p>Code 128 accepts printable ASCII. Code 39 accepts uppercase letters, digits and
+its documented punctuation. QR accepts Turkish UTF-8 text. Retail barcodes accept
+the full number or a number missing only its check digit. Incorrect full check
+digits are rejected. Missing check digits are completed in the encoded output;
+the product catalog is not silently rewritten. Use <strong>Barcode tools</strong> to inspect
+the normalized number and apply it to a selected barcode object.</p>
+<p>Red objects indicate invalid or overflowing content. Correct them before printing.
+The engine rejects objects outside the label, text that does not fit, and barcodes
+too small to preserve whole printer dots and quiet zones. It never squeezes a
+barcode to force it into a narrow field. Leave clear space around every barcode;
+avoid overlapping other objects onto its white border.</p>
+<h2 id="preview-and-print">Preview and print</h2>
+<p>Set the quantity and click <strong>Print preview / Baskı önizleme</strong>. Static text, literal
+barcodes, embedded logos and dates do not require a catalog product. If the label
+uses product fields, product images or tokens such as <code>{Barcode}</code>, select a real
+product at the top of preview. A missing selection shows an explanation and blocks
+printing and EPL2 export; editor demonstration values are never printed.</p>
+<p>Select or refresh the printer in preview. Valid labels can be previewed and exported
+without a printer. Print is enabled when rendering succeeds and a printer is selected.
+Printer errors remain visible in preview so the selection can be corrected. Batch jobs use <strong>Batch printing</strong>: select products, set each row's
+quantity, then preview. <strong>Select all</strong> selects the complete catalog, including an
+imported Excel list. To print just imported rows, select those rows explicitly or
+use a separate catalog/backup workflow; importing does not remove existing rows.</p>
+<p>Preview validates every selected product before any printing. Browse the job with
+<strong>Önceki / Sonraki</strong>. <strong>Print</strong> sends it to the selected queue; <strong>Cancel</strong> sends
+nothing. Save the same image to PNG or the entire batch to binary EPL2 for later
+diagnostics. The preview shows the actual monochrome pixels used for printing,
+including the optional 180° rotation.</p>
+<p><strong>Actual size</strong> uses Windows logical display dimensions. Measure the 50 mm ruler
+in preview with a physical ruler; enter <code>50 / measured millimetres</code> as <strong>Ekran
+boyut düzeltmesi</strong> under app settings. This changes only display scaling. Printed
+dimensions always use the printer's exact 8 dots/mm grid.</p>
+<p>The default transport is EPL2 RAW. <strong>Print through Windows driver</strong> instead uses the
+installed driver's XPS path. Set speed, darkness and media type in Windows printing
+preferences for that path. A driver that cannot accept the requested paper size
+and printable area is rejected instead of scaling the label.</p>
+<h2 id="queue-errors-and-recovery">Queue, errors and recovery</h2>
+<p>A submitted job has a Windows job ID. Submission and disappearance from a queue
+do not prove paper output. Check the physical label and scanner result. Legacy
+USB drivers may not immediately report a disconnected cable, paper-out or an open
+cover. The application reports the status Windows makes available.</p>
+<p>Use <strong>Refresh queue</strong> to inspect the selected queue, and <strong>Cancel selected job</strong> to
+cancel an TBRK Label Studio job. Windows may already have delivered some data; those
+labels cannot be recalled. The bottom Stop submission button stops further RAW batch
+submissions between synchronous Windows calls. Use the Windows queue for a driver
+job; the app Stop submission button is disabled for that transport. Open Windows
+queue remains available during submission. The app never automatically retries or replays history after a restart.</p>
+<p>If a batch fails, inspect the spooler and already printed labels before retrying.
+The submission history records accepted, pending and failed/uncertain operations.
+A pending entry after a crash is not replayed automatically.</p>
+<h2 id="local-data-and-backup">Local data and backup</h2>
+<p>Data lives in <code>%LOCALAPPDATA%\EtiketStudio\etiketstudio.db</code>. Settings, products,
+draft design and recent job records are local. <strong>Back up database</strong> takes a
+consistent SQLite backup including committed WAL data. On the first launch each
+day, an automatic backup is saved in <code>Backups</code>; the latest seven daily startup
+backups are retained. These do not include later edits that day, so make a manual
+backup after important changes.</p>
+<p>Use <strong>App settings → Restore backup</strong> and select a <code>.db</code> file. Save any pending
+product or design edits first. After confirmation the app validates a snapshot,
+creates a <code>Backups/before-restore-...db</code> safety copy of current data and restores
+all tables in one transaction. Invalid files and failed transactions leave current
+data intact. The app closes after success: reopen it to load restored settings.
+Manual and pre-restore backups are not automatically deleted.</p>
+<p>If invalid settings prevent saving at exit, choose No to return and correct them,
+or Yes to discard unsaved settings/draft edits. Unsaved product forms prompt
+separately. Previously saved products are retained. On small or highly scaled
+displays use the workspace scrollbars. Technical errors are logged to
+<code>application.log</code>; review paths and product details before sharing logs.</p>
+<p>See <code>TEST_REPORT.md</code> for the release's verification status and
+<code>HARDWARE_ACCEPTANCE.md</code> for the target-computer checklist.</p>
+<p>Open TBRKLabelStudio.exe inside the extracted TBRKLabelStudio-0.1.3 folder. This release starts in English on first launch. App settings remembers subsequent language choices.</p><footer>TBRK Label Studio 0.1.3 · GPL-3.0-only · Offline documentation · 31 October 2026</footer></main></body></html>

@@ -1,0 +1,10 @@
+  EtiketStudio.Core -> /workspace/scratch/8881a91fabc9/EtiketStudio/src/EtiketStudio.Core/bin/Release/net10.0/EtiketStudio.Core.dll
+  EtiketStudio.Windows -> /workspace/scratch/8881a91fabc9/EtiketStudio/src/EtiketStudio.Windows/bin/Release/net10.0-windows/TBRKLabelStudio.dll
+  EtiketStudio.Tests -> /workspace/scratch/8881a91fabc9/EtiketStudio/tests/EtiketStudio.Tests/bin/Release/net10.0/EtiketStudio.Tests.dll
+  EtiketStudio.Fixtures -> /workspace/scratch/8881a91fabc9/EtiketStudio/tools/EtiketStudio.Fixtures/bin/Release/net10.0/EtiketStudio.Fixtures.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:13.28

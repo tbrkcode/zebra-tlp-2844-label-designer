@@ -1,0 +1,6 @@
+Test run for /workspace/scratch/8881a91fabc9/EtiketStudio/tests/EtiketStudio.Tests/bin/Release/net10.0/EtiketStudio.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+WARNING: Overwriting results file: /workspace/scratch/8881a91fabc9/EtiketStudio/test-results/workflow-0.1.2.trx
+Results File: /workspace/scratch/8881a91fabc9/EtiketStudio/test-results/workflow-0.1.2.trx
+
+Passed!  - Failed:     0, Passed:   102, Skipped:     0, Total:   102, Duration: 1 s - EtiketStudio.Tests.dll (net10.0)

@@ -1,0 +1,160 @@
+[
+  {
+    "package": "ClosedXML/0.105.1",
+    "authors": "Jan Havlíček, Francois Botha, Aleksei Pankratev, Manuel de Leon, Amir Ghezelbash",
+    "license": "MIT",
+    "projectUrl": "https://github.com/ClosedXML/ClosedXML",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ClosedXML/ClosedXML",
+      "commit": "b4ebe47bd3ecebf8480dea7422188d16b35b9d9a"
+    }
+  },
+  {
+    "package": "ClosedXML.Parser/2.0.0",
+    "authors": "Jan Havlíček",
+    "license": "MIT",
+    "projectUrl": "https://github.com/ClosedXML/ClosedXML.Parser",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ClosedXML/ClosedXML.Parser",
+      "commit": "658973aeedc2fe289e0ccba2bb9959f67692ded5"
+    }
+  },
+  {
+    "package": "DocumentFormat.OpenXml/3.1.1",
+    "authors": "Microsoft",
+    "license": "MIT",
+    "projectUrl": "https://github.com/dotnet/Open-XML-SDK",
+    "copyright": "© Microsoft Corporation. All rights reserved.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dotnet/Open-XML-SDK",
+      "commit": "f9e6ad7524e22b6b1f932deabc9055201b7870c0"
+    }
+  },
+  {
+    "package": "DocumentFormat.OpenXml.Framework/3.1.1",
+    "authors": "Microsoft",
+    "license": "MIT",
+    "projectUrl": "https://github.com/dotnet/Open-XML-SDK",
+    "copyright": "© Microsoft Corporation. All rights reserved.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dotnet/Open-XML-SDK",
+      "commit": "f9e6ad7524e22b6b1f932deabc9055201b7870c0"
+    }
+  },
+  {
+    "package": "ExcelNumberFormat/1.1.0",
+    "authors": "ExcelNumberFormat developers",
+    "license": "MIT",
+    "projectUrl": "https://github.com/andersnm/ExcelNumberFormat"
+  },
+  {
+    "package": "Microsoft.Data.Sqlite/10.0.14",
+    "authors": "Microsoft",
+    "license": "MIT",
+    "projectUrl": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
+    "copyright": "© Microsoft Corporation. All rights reserved.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dotnet/dotnet",
+      "commit": "0427b9abbead3fa64c6655eb4290c537397131fa"
+    }
+  },
+  {
+    "package": "Microsoft.Data.Sqlite.Core/10.0.14",
+    "authors": "Microsoft",
+    "license": "MIT",
+    "projectUrl": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
+    "copyright": "© Microsoft Corporation. All rights reserved.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dotnet/dotnet",
+      "commit": "0427b9abbead3fa64c6655eb4290c537397131fa"
+    }
+  },
+  {
+    "package": "Microsoft.NET.ILLink.Tasks/10.0.14",
+    "authors": "Microsoft",
+    "license": "MIT",
+    "projectUrl": "https://dot.net/",
+    "copyright": "© Microsoft Corporation. All rights reserved.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dotnet/dotnet",
+      "commit": "0427b9abbead3fa64c6655eb4290c537397131fa"
+    }
+  },
+  {
+    "package": "RBush.Signed/4.0.0",
+    "authors": "viceroypenguin",
+    "license": "MIT",
+    "copyright": "Copyright © 2017-2024 Turning Code, LLC (and others)",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/viceroypenguin/RBush",
+      "branch": "refs/heads/master",
+      "commit": "b8690322abac35d835baa2fdca4a3918ed77a910"
+    }
+  },
+  {
+    "package": "SixLabors.Fonts/1.0.0",
+    "authors": "Six Labors and contributors",
+    "license": "Apache-2.0",
+    "projectUrl": "https://github.com/SixLabors/Fonts",
+    "copyright": "Copyright © Six Labors",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/SixLabors/Fonts",
+      "commit": "32bef42997adb10268369ca149777f00e4241ce9"
+    }
+  },
+  {
+    "package": "SQLitePCLRaw.bundle_e_sqlite3/2.1.13",
+    "authors": "Eric Sink",
+    "license": "Apache-2.0",
+    "copyright": "Copyright 2014-2024 SourceGear, LLC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ericsink/SQLitePCL.raw"
+    }
+  },
+  {
+    "package": "SQLitePCLRaw.core/2.1.13",
+    "authors": "Eric Sink",
+    "license": "Apache-2.0",
+    "copyright": "Copyright 2014-2024 SourceGear, LLC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ericsink/SQLitePCL.raw"
+    }
+  },
+  {
+    "package": "SQLitePCLRaw.lib.e_sqlite3/2.1.13",
+    "authors": "Eric Sink",
+    "license": "Apache-2.0",
+    "copyright": "Copyright 2014-2024 SourceGear, LLC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ericsink/SQLitePCL.raw"
+    }
+  },
+  {
+    "package": "SQLitePCLRaw.provider.e_sqlite3/2.1.13",
+    "authors": "Eric Sink",
+    "license": "Apache-2.0",
+    "copyright": "Copyright 2014-2024 SourceGear, LLC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ericsink/SQLitePCL.raw"
+    }
+  },
+  {
+    "package": "ZXing.Net/0.16.11",
+    "authors": "Michael Jahn",
+    "license": "Apache-2.0",
+    "projectUrl": "https://github.com/micjahn/ZXing.Net/"
+  }
+]

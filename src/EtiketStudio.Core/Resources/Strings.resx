@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="InputErrors" xml:space="preserve">
+    <value>Kırmızı işaretli alanları düzeltin; geçersiz değerlerle kaydetme veya baskı yapılamaz.</value>
+  </data>
+  <data name="BatchMemory" xml:space="preserve">
+    <value>Bu etiket boyutunda seçilen ürün sayısı önizleme belleği sınırını aşıyor. Daha küçük gruplar seçin.</value>
+  </data>
+  <data name="BarcodeUnreadable" xml:space="preserve">
+    <value>Son baskı görüntüsündeki barkod doğrulanamadı. Üzerini örten nesneleri kaldırın, beyaz boşluğu ve boyutu kontrol edin.</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>TBRK Label Studio</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>Etiket tasarımı</value>
+  </data>
+  <data name="PrinterSettings" xml:space="preserve">
+    <value>Yazıcı ayarları</value>
+  </data>
+  <data name="BarcodeTools" xml:space="preserve">
+    <value>Barkod araçları</value>
+  </data>
+  <data name="BatchPrint" xml:space="preserve">
+    <value>Toplu baskı</value>
+  </data>
+  <data name="AppSettings" xml:space="preserve">
+    <value>Program ayarları</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ürün adı</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barkod</value>
+  </data>
+  <data name="Sku" xml:space="preserve">
+    <value>Stok kodu</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="ProductImage" xml:space="preserve">
+    <value>Ürün görseli</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="Duplicate" xml:space="preserve">
+    <value>Çoğalt</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Aç</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>İçe aktar</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Dışa aktar</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Resim seç</value>
+  </data>
+  <data name="RemoveImage" xml:space="preserve">
+    <value>Resmi kaldır</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Ürün ara…</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Baskı önizleme</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Yazdır</value>
+  </data>
+  <data name="Copies" xml:space="preserve">
+    <value>Adet</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Tümünü seç</value>
+  </data>
+  <data name="ClearSelection" xml:space="preserve">
+    <value>Seçimi kaldır</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Seç</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Şablon adı</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Genişlik (mm)</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Yükseklik (mm)</value>
+  </data>
+  <data name="Gap" xml:space="preserve">
+    <value>Etiket aralığı (mm)</value>
+  </data>
+  <data name="X" xml:space="preserve">
+    <value>X (mm)</value>
+  </data>
+  <data name="Y" xml:space="preserve">
+    <value>Y (mm)</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Yazı boyutu (pt)</value>
+  </data>
+  <data name="FontFamily" xml:space="preserve">
+    <value>Yazı tipi</value>
+  </data>
+  <data name="Stroke" xml:space="preserve">
+    <value>Çizgi kalınlığı (mm)</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>Kalın</value>
+  </data>
+  <data name="HumanReadable" xml:space="preserve">
+    <value>Barkod metnini göster</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Metin</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>İçerik / alan</value>
+  </data>
+  <data name="BarcodeType" xml:space="preserve">
+    <value>Barkod türü</value>
+  </data>
+  <data name="QrCode" xml:space="preserve">
+    <value>QR kod</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>Çizgi</value>
+  </data>
+  <data name="Rectangle" xml:space="preserve">
+    <value>Dikdörtgen</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Resim / logo</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Ürün adı</value>
+  </data>
+  <data name="ProductCode" xml:space="preserve">
+    <value>Ürün kodu</value>
+  </data>
+  <data name="DateTime" xml:space="preserve">
+    <value>Tarih ve saat</value>
+  </data>
+  <data name="Ean13" xml:space="preserve">
+    <value>EAN-13</value>
+  </data>
+  <data name="Ean8" xml:space="preserve">
+    <value>EAN-8</value>
+  </data>
+  <data name="Code128" xml:space="preserve">
+    <value>Code 128</value>
+  </data>
+  <data name="Code39" xml:space="preserve">
+    <value>Code 39</value>
+  </data>
+  <data name="UpcA" xml:space="preserve">
+    <value>UPC-A</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Nesne özellikleri</value>
+  </data>
+  <data name="AddObject" xml:space="preserve">
+    <value>Nesne ekle</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>Geri al</value>
+  </data>
+  <data name="Redo" xml:space="preserve">
+    <value>Yinele</value>
+  </data>
+  <data name="BringFront" xml:space="preserve">
+    <value>Öne getir</value>
+  </data>
+  <data name="SendBack" xml:space="preserve">
+    <value>Arkaya gönder</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Yakınlaştırma</value>
+  </data>
+  <data name="ActualSize" xml:space="preserve">
+    <value>Gerçek boyut</value>
+  </data>
+  <data name="Snap" xml:space="preserve">
+    <value>0,5 mm ızgaraya hizala</value>
+  </data>
+  <data name="EditorHelp" xml:space="preserve">
+    <value>Nesne eklemek için soldaki araçları etikete sürükleyin veya çift tıklayın. Taşımak için sürükleyin; ölçüleri sağdan değiştirin.</value>
+  </data>
+  <data name="FieldsHelp" xml:space="preserve">
+    <value>Alanlar: {Name}, {Barcode}, {Sku}, {Price}, {Category}, {Description}, {Date}, {Time}</value>
+  </data>
+  <data name="ChooseObject" xml:space="preserve">
+    <value>Özelliklerini düzenlemek için bir nesne seçin.</value>
+  </data>
+  <data name="Printer" xml:space="preserve">
+    <value>Yazıcı</value>
+  </data>
+  <data name="RefreshPrinters" xml:space="preserve">
+    <value>Yazıcıları yenile</value>
+  </data>
+  <data name="Darkness" xml:space="preserve">
+    <value>Baskı yoğunluğu (0–15)</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>EPL2 hız kodu (1–4)</value>
+  </data>
+  <data name="Reverse" xml:space="preserve">
+    <value>Etiketi 180° döndür</value>
+  </data>
+  <data name="DirectThermal" xml:space="preserve">
+    <value>Direkt termal (ribonsuz)</value>
+  </data>
+  <data name="DriverMode" xml:space="preserve">
+    <value>Windows sürücüsüyle yazdır</value>
+  </data>
+  <data name="RawModeHelp" xml:space="preserve">
+    <value>Varsayılan: EPL2 / RAW. Türkçe metin ve QR kodları 8 nokta/mm görüntü olarak gönderilir. 2844-Z için kullanmayın.</value>
+  </data>
+  <data name="DriverHelp" xml:space="preserve">
+    <value>Sürücü yolunda hız, yoğunluk ve medya türünü Windows yazıcı tercihlerinden ayarlayın. Etiket boyutu otomatik uygulanır; desteklenmiyorsa baskı durdurulur.</value>
+  </data>
+  <data name="SpeedHelp" xml:space="preserve">
+    <value>TLP 2844: S1 = 1,5 ips; S2 = 2 ips; S3 = 2,5 ips; S4 = 3,5 ips (Zebra EPL kılavuzu).</value>
+  </data>
+  <data name="Calibration" xml:space="preserve">
+    <value>Etiket kalibrasyonu</value>
+  </data>
+  <data name="NativeTest" xml:space="preserve">
+    <value>50 × 30 mm EPL2 test baskısı</value>
+  </data>
+  <data name="ConfigPrint" xml:space="preserve">
+    <value>Yazıcı bilgilerini yazdır</value>
+  </data>
+  <data name="WindowsQueue" xml:space="preserve">
+    <value>Windows baskı kuyruğu</value>
+  </data>
+  <data name="RefreshQueue" xml:space="preserve">
+    <value>Kuyruğu yenile</value>
+  </data>
+  <data name="CancelJob" xml:space="preserve">
+    <value>Seçili işi iptal et</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Gönderim geçmişi</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Bağlantı noktası</value>
+  </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Sürücü</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="JobId" xml:space="preserve">
+    <value>İş no.</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Belge</value>
+  </data>
+  <data name="Labels" xml:space="preserve">
+    <value>Etiket adedi</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Zaman</value>
+  </data>
+  <data name="ValidateBarcode" xml:space="preserve">
+    <value>Doğrula / kontrol hanesi ekle</value>
+  </data>
+  <data name="BarcodeValid" xml:space="preserve">
+    <value>Geçerli barkod: {0}</value>
+  </data>
+  <data name="UseBarcode" xml:space="preserve">
+    <value>Seçili barkod nesnesine uygula</value>
+  </data>
+  <data name="NoBarcodeSelected" xml:space="preserve">
+    <value>Önce tasarımda bir barkod veya QR nesnesi seçin.</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Koyu tema</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Arayüz dili</value>
+  </data>
+  <data name="RestartLanguage" xml:space="preserve">
+    <value>Dil seçimi anında uygulanır ve otomatik kaydedilir.</value>
+  </data>
+  <data name="DisplayScale" xml:space="preserve">
+    <value>Ekran boyut düzeltmesi</value>
+  </data>
+  <data name="DisplayHelp" xml:space="preserve">
+    <value>Gerçek boyut görünümündeki 50 mm cetveli fiziksel cetvelle ölçün. Düzeltme = 50 / ölçülen mm. Bu ayar baskı ölçüsünü değiştirmez.</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Veritabanını yedekle</value>
+  </data>
+  <data name="OpenDataFolder" xml:space="preserve">
+    <value>Veri klasörünü aç</value>
+  </data>
+  <data name="SaveSettings" xml:space="preserve">
+    <value>Ayarları kaydet</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Kullanım kılavuzu</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Çevrimdışı • Yerel SQLite • GPL-3.0</value>
+  </data>
+  <data name="Ready" xml:space="preserve">
+    <value>Hazır</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Kaydedildi.</value>
+  </data>
+  <data name="Imported" xml:space="preserve">
+    <value>{0} ürün içe aktarıldı.</value>
+  </data>
+  <data name="Exported" xml:space="preserve">
+    <value>Dışa aktarma tamamlandı.</value>
+  </data>
+  <data name="Busy" xml:space="preserve">
+    <value>İşlem sürüyor…</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>İşlem tamamlanamadı</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>Beklenmeyen bir hata oluştu. Teknik ayrıntılar veri klasöründeki günlük dosyasına yazıldı.</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>{0}: {1} ile {2} arasında bir değer girin.</value>
+  </data>
+  <data name="ProductRequired" xml:space="preserve">
+    <value>Ürün adı ve stok kodu zorunludur.</value>
+  </data>
+  <data name="TextTooLong" xml:space="preserve">
+    <value>Alanlardan biri izin verilen uzunluğu aşıyor.</value>
+  </data>
+  <data name="InvalidPrice" xml:space="preserve">
+    <value>Fiyat negatif olamaz ve en fazla iki ondalık basamak içerebilir. Binlik ayırıcı kullanmayın.</value>
+  </data>
+  <data name="InvalidFile" xml:space="preserve">
+    <value>Dosya biçimi veya içeriği geçersiz.</value>
+  </data>
+  <data name="FileTooLarge" xml:space="preserve">
+    <value>Dosya çok büyük. Görsel sınırı 5 MB; şablon 20 MB; içe aktarma 30 MB.</value>
+  </data>
+  <data name="CopiesRange" xml:space="preserve">
+    <value>Etiket adedi 1 ile 1000 arasında olmalıdır.</value>
+  </data>
+  <data name="BatchLimit" xml:space="preserve">
+    <value>Bir işlemde en fazla 1000 etiket gönderilebilir.</value>
+  </data>
+  <data name="TemplateVersion" xml:space="preserve">
+    <value>Bu şablon sürümü desteklenmiyor.</value>
+  </data>
+  <data name="GapMinimum" xml:space="preserve">
+    <value>Aralıklı etiketlerde boşluk en az 2 mm olmalıdır; sürekli medya için 0 girin.</value>
+  </data>
+  <data name="TooManyObjects" xml:space="preserve">
+    <value>Bir etikette en fazla 200 nesne olabilir.</value>
+  </data>
+  <data name="OutsideLabel" xml:space="preserve">
+    <value>Bir nesne etiket sınırının dışında. Konumunu veya boyutunu düzeltin.</value>
+  </data>
+  <data name="InvalidRaster" xml:space="preserve">
+    <value>Baskı görüntüsü boyutları geçersiz.</value>
+  </data>
+  <data name="DigitsOnly" xml:space="preserve">
+    <value>Bu barkod yalnızca 0–9 rakamlarını içerebilir.</value>
+  </data>
+  <data name="EmptyBarcode" xml:space="preserve">
+    <value>Barkod içeriği boş olamaz.</value>
+  </data>
+  <data name="BarcodeLength" xml:space="preserve">
+    <value>Barkod {0} veya {1} rakam içermelidir.</value>
+  </data>
+  <data name="Checksum" xml:space="preserve">
+    <value>Barkod kontrol hanesi yanlış. Numara otomatik değiştirilmedi.</value>
+  </data>
+  <data name="InvalidBarcode" xml:space="preserve">
+    <value>Barkod oluşturulamadı. İçeriği ve türünü kontrol edin.</value>
+  </data>
+  <data name="Code39Characters" xml:space="preserve">
+    <value>Code 39: yalnızca büyük Latin harfleri, rakamlar, boşluk ve - . $ / + %; en fazla 80 karakter.</value>
+  </data>
+  <data name="Code128Characters" xml:space="preserve">
+    <value>Code 128: yazdırılabilir ASCII karakterleri kullanın (en fazla 80). Türkçe içerik için QR kod seçin.</value>
+  </data>
+  <data name="QrTooLong" xml:space="preserve">
+    <value>QR içeriği 1200 UTF-8 baytını aşamaz.</value>
+  </data>
+  <data name="BarcodeTooSmall" xml:space="preserve">
+    <value>Barkod alanı çok dar/küçük. En az {0} mm genişlik gerekir; QR için yükseklik de aynı ölçüde olmalıdır.</value>
+  </data>
+  <data name="DatabaseVersion" xml:space="preserve">
+    <value>Veritabanı daha yeni bir program sürümüne ait.</value>
+  </data>
+  <data name="DuplicateSku" xml:space="preserve">
+    <value>Stok kodu tekrarlanıyor. Her ürünün farklı bir stok kodu olmalıdır.</value>
+  </data>
+  <data name="ImportHeaders" xml:space="preserve">
+    <value>Başlıklar: Sku, Name, Barcode, Price; isteğe bağlı Description, Category, ImageBase64.</value>
+  </data>
+  <data name="ImportRow" xml:space="preserve">
+    <value>Satır {0}: {1}</value>
+  </data>
+  <data name="ImportColumns" xml:space="preserve">
+    <value>Sütun sayısı başlıklarla eşleşmiyor.</value>
+  </data>
+  <data name="TooManyRows" xml:space="preserve">
+    <value>İçe/dışa aktarmada en fazla 10.000 ürün desteklenir.</value>
+  </data>
+  <data name="InvalidCsv" xml:space="preserve">
+    <value>CSV tırnakları veya ayırıcıları geçersiz.</value>
+  </data>
+  <data name="ImportFormula" xml:space="preserve">
+    <value>Satır {0}: Excel formüllerini önce değerlere dönüştürün.</value>
+  </data>
+  <data name="ExcelImageLimit" xml:space="preserve">
+    <value>Bir görsel Excel hücre sınırını aşıyor. CSV kullanın veya görseli küçültün.</value>
+  </data>
+  <data name="NoPrinter" xml:space="preserve">
+    <value>Yazıcı bulunamadı. USB bağlantısını, yazıcının açık olduğunu ve Windows sürücüsünün kurulu olduğunu kontrol edin; ardından listeyi yenileyin.</value>
+  </data>
+  <data name="SelectPrinter" xml:space="preserve">
+    <value>Önce bir yazıcı seçin.</value>
+  </data>
+  <data name="NotEpl" xml:space="preserve">
+    <value>Seçilen kuyruk TLP 2844 EPL modeli olarak tanınmadı. Doğru EPL sürücüsünü seçin. 2844-Z / ZPL kuyruğuna EPL2 gönderilmez.</value>
+  </data>
+  <data name="PrinterOffline" xml:space="preserve">
+    <value>Yazıcı çevrimdışı, duraklatılmış veya hata durumunda. Windows kuyruğunu ve USB bağlantısını kontrol edin.</value>
+  </data>
+  <data name="SpoolError" xml:space="preserve">
+    <value>Windows yazdırma hatası ({0}). Kuyruğu ve yazıcı bağlantısını kontrol edin.</value>
+  </data>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>Yazıcı erişimi reddedildi. Windows yazdırma izinlerini kontrol edin.</value>
+  </data>
+  <data name="SpoolUnavailable" xml:space="preserve">
+    <value>Windows Yazdırma Biriktiricisi hizmeti kullanılamıyor. Hizmeti başlatıp tekrar deneyin.</value>
+  </data>
+  <data name="DriverSize" xml:space="preserve">
+    <value>Sürücü bu etiket boyutunu veya yazdırılabilir alanını kabul etmedi. Windows özel kağıt boyutunu ayarlayın ya da EPL2 yolunu kullanın.</value>
+  </data>
+  <data name="DriverUnavailable" xml:space="preserve">
+    <value>Windows yazıcı sürücüsüne erişilemiyor.</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>Windows kuyruğuna gönderildi (iş {0}). Fiziksel baskı doğrulanmadı.</value>
+  </data>
+  <data name="SubmittedDriver" xml:space="preserve">
+    <value>Windows sürücüsüne gönderildi. Fiziksel baskı doğrulanmadı.</value>
+  </data>
+  <data name="PartialSubmission" xml:space="preserve">
+    <value>Gönderim durdu. Önceden gönderilen etiketler basılmış olabilir. Yeniden denemeden önce kuyruğu ve etiketleri kontrol edin.</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Kuyruğa gönderildi</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Gönderim hatası / sonuç belirsiz</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>İptal istendi</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Gönderiliyor / sonuç doğrulanmadı</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>Seçili ürün silinsin mi?</value>
+  </data>
+  <data name="NewTemplateConfirm" xml:space="preserve">
+    <value>Kaydedilmemiş tasarım değişiklikleri silinsin mi?</value>
+  </data>
+  <data name="ImportConfirm" xml:space="preserve">
+    <value>Aynı stok koduna sahip ürünler güncellenir. İçe aktarma sürdürülsün mü?</value>
+  </data>
+  <data name="CalibrationConfirm" xml:space="preserve">
+    <value>Kalibrasyon etiketleri ilerletir. Aralıklı etiket takılı olduğundan emin olun. Devam edilsin mi?</value>
+  </data>
+  <data name="TestConfirm" xml:space="preserve">
+    <value>50 × 30 mm etiket ve 3 mm aralık için bir test etiketi basılacak. Devam edilsin mi?</value>
+  </data>
+  <data name="PrintSummary" xml:space="preserve">
+    <value>{0} etiket • {1} ürün • {2}</value>
+  </data>
+  <data name="PreviewHelp" xml:space="preserve">
+    <value>Bu önizleme gönderilecek görüntünün aynısıdır. Barkodları ve ölçüleri kontrol edin.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Önceki</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Sonraki</value>
+  </data>
+  <data name="NoProductsSelected" xml:space="preserve">
+    <value>Baskı için en az bir ürün seçin.</value>
+  </data>
+  <data name="NoProduct" xml:space="preserve">
+    <value>Önce bir ürün ekleyin veya seçin.</value>
+  </data>
+  <data name="NoImage" xml:space="preserve">
+    <value>Görsel seçilmedi. Resim nesnesi için dosya ekleyin veya ürün görseli kullanın.</value>
+  </data>
+  <data name="TextOverflow" xml:space="preserve">
+    <value>Metin alanına sığmıyor: {0}. Alanı büyütün veya yazıyı küçültün.</value>
+  </data>
+  <data name="ImageFormat" xml:space="preserve">
+    <value>Geçersiz görsel. PNG, JPEG veya BMP kullanın (en fazla 4096 × 4096 piksel).</value>
+  </data>
+  <data name="EmptyLabel" xml:space="preserve">
+    <value>Baskı için etikete en az bir nesne ekleyin.</value>
+  </data>
+  <data name="EplExport" xml:space="preserve">
+    <value>EPL2 dosyasını kaydet</value>
+  </data>
+  <data name="PngExport" xml:space="preserve">
+    <value>Önizlemeyi PNG kaydet</value>
+  </data>
+  <data name="BatchHelp" xml:space="preserve">
+    <value>Ürünleri seçin ve her satıra adet girin. Önizlemeden sonra baskıyı onaylayın. İçe aktarılan tüm ürünler için Tümünü seç kullanın.</value>
+  </data>
+  <data name="SampleProduct" xml:space="preserve">
+    <value>Örnek ürün – Çay</value>
+  </data>
+  <data name="SampleCategory" xml:space="preserve">
+    <value>Örnek</value>
+  </data>
+  <data name="SaveProductFirst" xml:space="preserve">
+    <value>Yeni veya değişen ürünü önce Kaydet ile kaydedin.</value>
+  </data>
+  <data name="NoJob" xml:space="preserve">
+    <value>İptal etmek için bu uygulamaya ait bir kuyruk işi seçin.</value>
+  </data>
+  <data name="QueueHelp" xml:space="preserve">
+    <value>Kuyruktan kaybolan bir işin fiziksel olarak basıldığı kesin değildir. USB çıkarılması bazı sürücülerde hemen bildirilmez.</value>
+  </data>
+  <data name="JobQueued" xml:space="preserve">
+    <value>Kuyrukta</value>
+  </data>
+  <data name="JobPrinting" xml:space="preserve">
+    <value>Yazdırılıyor</value>
+  </data>
+  <data name="JobPaused" xml:space="preserve">
+    <value>Duraklatıldı</value>
+  </data>
+  <data name="JobError" xml:space="preserve">
+    <value>Hata / çevrimdışı</value>
+  </data>
+  <data name="ImageAttached" xml:space="preserve">
+    <value>Görsel eklendi</value>
+  </data>
+  <data name="NoImageAttached" xml:space="preserve">
+    <value>Görsel yok</value>
+  </data>
+  <data name="PreviewNeedsProduct" xml:space="preserve">
+    <value>Bu şablon ürün bilgisi kullanıyor. Yukarıdan bir ürün seçin. Ürün yoksa Ürünler ekranından ekleyin. Örnek veriler yazdırılmaz.</value>
+  </data>
+  <data name="PreviewNoPrinter" xml:space="preserve">
+    <value>Windows yazıcı listesinde yazıcı bulunamadı. Yazıcıyı bağlayıp sürücüsünü kurun ve Yenile düğmesine basın. Önizleme ve dışa aktarma kullanılabilir.</value>
+  </data>
+  <data name="PreviewSelectPrinter" xml:space="preserve">
+    <value>Yazdırmak için yukarıdan bir yazıcı seçin.</value>
+  </data>
+  <data name="PreviewPrinterUnset" xml:space="preserve">
+    <value>Yazıcı seçilmedi</value>
+  </data>
+  <data name="DriverCancelHelp" xml:space="preserve">
+    <value>Windows sürücüsüyle gönderilen baskıları Windows yazdırma kuyruğundan iptal edin. Uygulamadaki Gönderimi durdur düğmesi yalnızca EPL2 içindir.</value>
+  </data>
+  <data name="DriverSubmitting" xml:space="preserve">
+    <value>Windows sürücüsüne gönderiliyor. İptal için Windows kuyruğunu açın.</value>
+  </data>
+  <data name="BusyClose" xml:space="preserve">
+    <value>İşlem devam ediyor. EPL2 gönderimini durdurabilir veya Windows kuyruğunu açabilirsiniz. İşlem tamamlanınca uygulamayı kapatın.</value>
+  </data>
+  <data name="DiscardOnClose" xml:space="preserve">
+    <value>Değişiklikler kaydedilemedi:
+{0}
+
+Kaydedilmemiş ayar ve tasarım değişikliklerinden vazgeçip çıkmak istiyor musunuz? Hayır seçerseniz düzeltmek için uygulamaya dönersiniz.</value>
+  </data>
+  <data name="DiscardProduct" xml:space="preserve">
+    <value>Ürün formunda kaydedilmemiş değişiklikler var. Bu ürün değişikliklerinden vazgeçip çıkmak istiyor musunuz?</value>
+  </data>
+  <data name="RestoreBackup" xml:space="preserve">
+    <value>Yedekten geri yükle</value>
+  </data>
+  <data name="RestoreConfirm" xml:space="preserve">
+    <value>Seçilen yedek mevcut ürünlerin, ayarların, tasarımın ve baskı geçmişinin yerini alacak. Önce mevcut verilerin güvenlik yedeği alınacak. İşlem bitince uygulama kapanacak. Devam edilsin mi?</value>
+  </data>
+  <data name="RestoreComplete" xml:space="preserve">
+    <value>Yedek geri yüklendi. Uygulamayı yeniden açın.
+Önceki verilerin güvenlik yedeği:
+{0}</value>
+  </data>
+  <data name="InvalidBackup" xml:space="preserve">
+    <value>Bu dosya geçerli bir TBRK Label Studio yedeği değil veya geri yüklenemiyor. Mevcut veriler değiştirilmedi.</value>
+  </data>
+  <data name="AutoBackupHelp" xml:space="preserve">
+    <value>Günün ilk açılışında otomatik yedek alınır; son 7 günlük açılış yedeği Backups klasöründe tutulur. Elle alınan ve geri yükleme öncesi yedekler otomatik silinmez.</value>
+  </data>
+  <data name="AutoBackupFailed" xml:space="preserve">
+    <value>Otomatik yedek alınamadı. Uygulamayı kullanabilirsiniz; Program ayarlarından elle yedek alın ve disk alanını kontrol edin.</value>
+  </data>
+  <data name="AlreadyRunning" xml:space="preserve">
+    <value>TBRK Label Studio zaten açık. Görev çubuğundaki pencereyi kullanın.</value>
+  </data>
+  <data name="StopSubmission" xml:space="preserve">
+    <value>Gönderimi durdur</value>
+  </data>
+</root>

@@ -1,0 +1,73 @@
+{
+  "SchemaVersion": 1,
+  "Name": "QR \u00B7 60 \u00D7 40 mm",
+  "Width": 60,
+  "Height": 40,
+  "Gap": 3,
+  "Elements": [
+    {
+      "Id": "b1bfdd40522b4a23aeae0c0f068384c4",
+      "Kind": "ProductName",
+      "BarcodeKind": "Code128",
+      "X": 3,
+      "Y": 2,
+      "Width": 54,
+      "Height": 5,
+      "FontSize": 10,
+      "Stroke": 0.25,
+      "Text": "Etiket",
+      "FontFamily": "Segoe UI",
+      "Bold": true,
+      "HumanReadable": true,
+      "Image": null
+    },
+    {
+      "Id": "fe5a4239bf634097a07a7c5f6a140459",
+      "Kind": "QrCode",
+      "BarcodeKind": "QrCode",
+      "X": 3,
+      "Y": 10,
+      "Width": 26,
+      "Height": 26,
+      "FontSize": 10,
+      "Stroke": 0.25,
+      "Text": "{Name} | {Sku} | {Barcode}",
+      "FontFamily": "Segoe UI",
+      "Bold": false,
+      "HumanReadable": true,
+      "Image": null
+    },
+    {
+      "Id": "6f2f3a10022a4dc4b557e174bc5f2026",
+      "Kind": "Price",
+      "BarcodeKind": "Code128",
+      "X": 32,
+      "Y": 12,
+      "Width": 25,
+      "Height": 6,
+      "FontSize": 12,
+      "Stroke": 0.25,
+      "Text": "Etiket",
+      "FontFamily": "Segoe UI",
+      "Bold": true,
+      "HumanReadable": true,
+      "Image": null
+    },
+    {
+      "Id": "ed95a13c5cd54082affea76f13867db1",
+      "Kind": "ProductCode",
+      "BarcodeKind": "Code128",
+      "X": 32,
+      "Y": 22,
+      "Width": 25,
+      "Height": 5,
+      "FontSize": 9,
+      "Stroke": 0.25,
+      "Text": "Etiket",
+      "FontFamily": "Segoe UI",
+      "Bold": false,
+      "HumanReadable": true,
+      "Image": null
+    }
+  ]
+}

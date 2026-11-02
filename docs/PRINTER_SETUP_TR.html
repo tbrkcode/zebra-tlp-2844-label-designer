@@ -1,0 +1,108 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zebra TLP 2844 USB kurulum kılavuzu</title><style>body{margin:0;background:#f3f6fa;color:#182536;font:16px/1.65 system-ui,Segoe UI,sans-serif}header{background:#152333;color:#fff;padding:28px max(24px,calc((100vw - 980px)/2))}header b{font-size:24px;letter-spacing:2px}header small{display:block;color:#8ee2cd}nav{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0 0}nav a{color:#d8f1e8;font-size:13px;text-decoration:none}main{max-width:920px;margin:26px auto 60px;background:white;border:1px solid #dce3ec;border-radius:14px;padding:30px 40px;box-shadow:0 8px 30px #15233306}h1{font-size:32px;line-height:1.2;margin-top:0}h2{margin-top:34px;font-size:22px;color:#087f70}h3{font-size:18px}a{color:#087f70}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto}td,th{border:1px solid #dce3ec;padding:10px 12px;text-align:left;vertical-align:top}th{background:#edf5f3}tr:nth-child(even){background:#f8fafb}code{background:#edf1f5;padding:2px 5px;border-radius:4px;font-size:.9em;overflow-wrap:anywhere}pre{background:#152333;color:#ecf6f2;padding:18px;border-radius:8px;overflow:auto}pre code{background:transparent;color:inherit;padding:0;white-space:pre}blockquote{border-left:4px solid #087f70;margin-left:0;padding-left:18px}li{margin:5px 0}footer{color:#5c6e82;font-size:12px;border-top:1px solid #dce3ec;margin-top:40px;padding-top:16px}@media(max-width:700px){main{margin:12px;padding:22px}h1{font-size:26px}}@media print{body{background:white;font-size:11pt}header,nav{display:none}main{max-width:none;margin:0;padding:0;border:0;box-shadow:none}h2{break-after:avoid}tr{break-inside:avoid}a{color:inherit}pre{white-space:pre-wrap}table{display:table}}</style></head><body><header><b>TBRK LABEL STUDIO</b><small>Desktop label design · TLP 2844 · EPL2</small><nav><a href="USER_GUIDE_TR.html">Türkçe</a><a href="USER_GUIDE_EN.html">English</a><a href="PRINTER_SETUP_TR.html">Yazıcı kurulumu</a><a href="PRINTER_SETUP_EN.html">Printer setup</a><a href="TEST_REPORT.html">Test report</a><a href="HARDWARE_ACCEPTANCE.html">Hardware acceptance</a><a href="ARCHITECTURE.html">Architecture</a></nav></header><main><h1 id="zebra-tlp-2844-usb-kurulum-klavuzu">Zebra TLP 2844 USB kurulum kılavuzu</h1>
+<h2 id="dogru-modeli-belirleyin">Doğru modeli belirleyin</h2>
+<p>Cihaz etiketinde <strong>TLP 2844</strong> yazmalıdır. <strong>TLP 2844-Z</strong>, ZPL ailesindedir; bu
+programın RAW EPL2 yolunda kullanılmaz. Kuyruk adını değiştirmek, yazıcının dilini
+değiştirmez. Uygulama RAW gönderim için kurulu sürücü adında TLP 2844 modelini arar
+ve 2844-Z/ZPL adlarını reddeder. Bu kontrol, cihazın gerçek modelinin fiziksel
+olarak doğrulanmasının yerine geçmez.</p>
+<p>TLP 2844 artık Zebra'nın desteklediği güncel bir ürün değildir. Bu nedenle Windows
+11'de her sürücü/USB/firmware birleşimi için sorunsuz çalışma garantisi verilemez.
+Uygulama Windows 11 x64 için derlenmiştir; sürücü ve gerçek baskı kabulü hedef
+bilgisayarda ayrıca tamamlanmalıdır. Firmware güncellemesi bu kurulumun parçası
+değildir; uygulama firmware yüklemez.</p>
+<h2 id="windows-kuyrugunu-hazrlayn">Windows kuyruğunu hazırlayın</h2>
+<ol>
+<li>Yazıcı modelini, bağlantı kablosunu, etiket/ribon türünü kontrol edin.</li>
+<li>Zebra'nın resmi kaynaklarından TLP 2844 EPL modelini içeren, bilgisayarınız için
+   uygun imzalı sürücü paketini edinin. Bir üretici kurulum paketi gerekiyorsa
+   bunu internet olan bir bilgisayarda indirip çevrimdışı bilgisayara taşıyabilirsiniz.</li>
+<li>Zebra'nın USB yönergesine göre sürücüyü USB bağlantısından <strong>önce</strong> kurun.</li>
+<li>USB kablosunu doğrudan bilgisayara bağlayın. Zebra'nın önerdiği kısa kabloyu
+   kullanın; eski cihaz USB 1.1 iletişim kurar. İlk testte USB çoğaltıcı kullanmayın.</li>
+<li>Windows <strong>Ayarlar → Bluetooth ve cihazlar → Yazıcılar ve tarayıcılar</strong> bölümünde
+   kuyruğun oluştuğunu doğrulayın. Sürücü modeli TLP 2844 EPL olmalıdır. Bağlantı
+   noktası çoğunlukla <code>USB001</code> benzeri görünür; doğru portu kendi bilgisayarınızdan
+   doğrulayın. Uygulama sabit bir USB port numarası varsaymaz.</li>
+<li>Kuyruk yoksa sürücü kurulumunu ve Aygıt Yöneticisi'ni kontrol edin. Programın
+   yazıcı listesi kurulu Windows kuyruklarını gösterir; ham USB aygıtlarını taramaz.</li>
+</ol>
+<h2 id="medya-ve-ilk-bask">Medya ve ilk baskı</h2>
+<ol>
+<li>İlk test için <strong>50 mm genişlik × 30 mm yükseklik, 3 mm boşluk</strong> olan tek sütun
+   etiketi takın. Yazıcı kapalıyken kullanıcı kılavuzundaki doğru yükleme yolunu
+   izleyin. Kapağı kapatın. Termal transfer kullanıyorsanız uygun ribon takın.</li>
+<li>TBRK Label Studio'da <strong>Yazıcı ayarları → Yazıcıları yenile</strong> ile kuyruğu seçin.</li>
+<li>Ribonsuz termal kağıtta <strong>Direkt termal</strong> seçili olsun; ribonlu termal transferde
+   seçimi kaldırın. Yoğunluk 8, hız kodu 2 ile başlayın.</li>
+<li>Aralıklı medya kullanırken <strong>Etiket kalibrasyonu</strong> ile <code>xa</code> gönderin. Bu işlem
+   medya ilerletir ve boşluğu algılar. Sürekli medyada <code>xa</code> kullanmayın; tasarımda
+   boşluğu 0 seçin. Siyah işaretli medya bu sürümün kapsamı dışındadır.</li>
+<li><strong>50 × 30 mm EPL2 test baskısı</strong> düğmesine basın ve belirtilen ölçüyü onaylayın.
+   Bu düğme tasarım boyutlarından bağımsız olarak tek bir 50 × 30 test etiketi basar.</li>
+<li>Üstte <code>ETIKET STUDIO</code>, altında Code 128 ve <code>123456789012</code> görülmelidir. Okuyucuyla
+   tarayın. Çizgiler kopuk veya birleşikse kafa temizliği, etiket/ribon, yoğunluk
+   ve hızı kontrol edin; ilk düzeltme olarak düşük hızda deneyin.</li>
+<li>Ürün ve tasarım ekleyip Türkçe metin ve QR kod içeren bir etiketi önizleyin ve
+   basın. <code>ç ğ ı İ ö ş ü</code> karakterlerini ve QR taramasını ayrı doğrulayın.</li>
+</ol>
+<p>Yazıcının EPL2 <code>GW</code> komutu ikili görüntü taşır. Türkçe metin ve QR görüntü olarak
+gönderildiği için yazıcının dahili Türkçe yazı tipine veya QR firmware komutuna
+bağımlılık yoktur. Yerleşik test etiketi ayrıca yazıcının <code>A</code> ve <code>B</code> komutlarını
+kullanır. Program ZPL komutu üretmez.</p>
+<h2 id="surucu-uzerinden-bask">Sürücü üzerinden baskı</h2>
+<p><strong>Windows sürücüsüyle yazdır</strong> seçeneğini etkinleştirin. Windows yazdırma
+tercihlerinde aynı özel etiket boyutunu tanımlayın. Hız, yoğunluk ve termal medya
+türünü bu yolda sürücüden ayarlayın. Uygulama isteği sürücüyle doğrular; boyut veya
+yazdırılabilir alan uymuyorsa ölçekleyerek baskı yapmaz. Varsayılan EPL2 yolu,
+TLP 2844 için ilk denenecek yoldur.</p>
+<h2 id="sorun-giderme">Sorun giderme</h2>
+<table>
+<thead>
+<tr>
+<th>Belirti</th>
+<th>Kontrol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yazıcı listede yok</td>
+<td>USB, güç, Windows kuyruğu ve sürücü; ardından listeyi yenileyin</td>
+</tr>
+<tr>
+<td>Listede var ama etiket çıkmıyor</td>
+<td>USB portu, Windows bekleyen işler, medya, kapak, ribon; kabul edilen iş fiziksel baskı demek değildir</td>
+</tr>
+<tr>
+<td>EPL komutları düz metin basılıyor</td>
+<td>Cihazın tanılama/dump durumunda olup olmadığını kontrol edin; kullanıcı kılavuzuna göre normal moda dönün</td>
+</tr>
+<tr>
+<td>Her seferinde etiket atlıyor</td>
+<td>Etiket yüzey yüksekliği ile boşluk ölçüsünü ayırın; aralıklı medyayı kalibre edin</td>
+</tr>
+<tr>
+<td>Türkçe metin eksik</td>
+<td>Önizlemeyi kontrol edin; bilgisayarda seçili yazı tipi bulunmalı ve metin alanına sığmalıdır</td>
+</tr>
+<tr>
+<td>Barkod taranmıyor</td>
+<td>Boyut, beyaz alan, fiziksel yoğunluk/hız ve çizgi bütünlüğünü kontrol edin</td>
+</tr>
+<tr>
+<td>“Sonuç belirsiz”</td>
+<td>Yeniden göndermeden önce fiziksel etiketleri ve Windows kuyruğunu kontrol edin</td>
+</tr>
+</tbody>
+</table>
+<p>Uygulama medyanın bittiğini yalnızca Windows bunu raporluyorsa görebilir; USB
+üzerinden donanımsal iki yönlü doğrulama uygulanmamıştır. Kabul formunu doldurmadan
+cihazı üretim baskısı için doğrulanmış saymayın.</p>
+<h2 id="resmi-basvuru-kaynaklar">Resmi başvuru kaynakları</h2>
+<ul>
+<li><a href="https://support.zebra.com/article/000016564">Zebra: 28xx/38xx USB iletişimi</a></li>
+<li><a href="https://support.zebra.com/article/000015691">Zebra: 2844 yapılandırmasını görme</a></li>
+<li><a href="https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/software/epl2-pm-en.pdf">Zebra EPL Programlama Kılavuzu</a></li>
+<li><a href="https://learn.microsoft.com/windows-hardware/drivers/print/end-of-servicing-plan-for-third-party-printer-drivers-on-windows">Microsoft: eski yazıcı sürücülerine ilişkin plan</a></li>
+</ul>
+<p>Kaynaklar 31 Ekim 2026 tarihinde incelenmiştir. Üretici sürücüsü ve kılavuzları bu
+GPL paketi içinde yeniden dağıtılmamıştır.</p><footer>TBRK Label Studio 0.1.3 · GPL-3.0-only · Offline documentation · 31 October 2026</footer></main></body></html>

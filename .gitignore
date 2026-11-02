@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+artifacts/
+TestResults/
+*.user
+*.db
+*.db-shm
+*.db-wal
+
+*_wpftmp.csproj

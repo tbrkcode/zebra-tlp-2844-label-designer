@@ -1,0 +1,50 @@
+[
+  {
+    "file": "raster-code39-64x40.epl",
+    "widthBytes": 64,
+    "height": 320,
+    "payloadBytes": 20480,
+    "trailer": "P1",
+    "pbmMatch": true
+  },
+  {
+    "file": "raster-upca-64x40.epl",
+    "widthBytes": 64,
+    "height": 320,
+    "payloadBytes": 20480,
+    "trailer": "P1",
+    "pbmMatch": true
+  },
+  {
+    "file": "raster-qrcode-64x40.epl",
+    "widthBytes": 64,
+    "height": 320,
+    "payloadBytes": 20480,
+    "trailer": "P1",
+    "pbmMatch": true
+  },
+  {
+    "file": "raster-ean13-64x40.epl",
+    "widthBytes": 64,
+    "height": 320,
+    "payloadBytes": 20480,
+    "trailer": "P1",
+    "pbmMatch": true
+  },
+  {
+    "file": "raster-ean8-64x40.epl",
+    "widthBytes": 64,
+    "height": 320,
+    "payloadBytes": 20480,
+    "trailer": "P1",
+    "pbmMatch": true
+  },
+  {
+    "file": "raster-code128-64x40.epl",
+    "widthBytes": 64,
+    "height": 320,
+    "payloadBytes": 20480,
+    "trailer": "P1",
+    "pbmMatch": true
+  }
+]

@@ -1,0 +1,6 @@
+  Determining projects to restore...
+  Restored /workspace/scratch/8881a91fabc9/EtiketStudio/src/EtiketStudio.Core/EtiketStudio.Core.csproj (in 8.42 sec).
+  Restored /workspace/scratch/8881a91fabc9/EtiketStudio/src/EtiketStudio.Windows/EtiketStudio.Windows.csproj (in 9.08 sec).
+  EtiketStudio.Core -> /workspace/scratch/8881a91fabc9/EtiketStudio/src/EtiketStudio.Core/bin/Release/net10.0/EtiketStudio.Core.dll
+  EtiketStudio.Windows -> /workspace/scratch/8881a91fabc9/EtiketStudio/src/EtiketStudio.Windows/bin/Release/net10.0-windows/win-x64/TBRKLabelStudio.dll
+  EtiketStudio.Windows -> /workspace/scratch/8881a91fabc9/output/TBRKLabelStudio-0.1.3/

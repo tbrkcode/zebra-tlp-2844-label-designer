@@ -1,0 +1,73 @@
+{
+  "SchemaVersion": 1,
+  "Name": "EAN-13 \u00B7 58 \u00D7 35 mm",
+  "Width": 58,
+  "Height": 35,
+  "Gap": 3,
+  "Elements": [
+    {
+      "Id": "14e289adb84f44c1a18d74b285363e18",
+      "Kind": "ProductName",
+      "BarcodeKind": "Code128",
+      "X": 3,
+      "Y": 2,
+      "Width": 44,
+      "Height": 5,
+      "FontSize": 10,
+      "Stroke": 0.25,
+      "Text": "Etiket",
+      "FontFamily": "Segoe UI",
+      "Bold": true,
+      "HumanReadable": true,
+      "Image": null
+    },
+    {
+      "Id": "8ba8c1e337384dd293784211d1df0cd8",
+      "Kind": "Barcode",
+      "BarcodeKind": "Ean13",
+      "X": 3,
+      "Y": 8,
+      "Width": 52,
+      "Height": 16,
+      "FontSize": 10,
+      "Stroke": 0.25,
+      "Text": "{Barcode}",
+      "FontFamily": "Segoe UI",
+      "Bold": false,
+      "HumanReadable": true,
+      "Image": null
+    },
+    {
+      "Id": "5aa5f07022a5449f9f63a92819092c3e",
+      "Kind": "Price",
+      "BarcodeKind": "Code128",
+      "X": 3,
+      "Y": 26,
+      "Width": 25,
+      "Height": 6,
+      "FontSize": 12,
+      "Stroke": 0.25,
+      "Text": "Etiket",
+      "FontFamily": "Segoe UI",
+      "Bold": true,
+      "HumanReadable": true,
+      "Image": null
+    },
+    {
+      "Id": "2bc9ccb5f6ef41aa958e4e54d1dfedc4",
+      "Kind": "ProductCode",
+      "BarcodeKind": "Code128",
+      "X": 29,
+      "Y": 28,
+      "Width": 18,
+      "Height": 4,
+      "FontSize": 8,
+      "Stroke": 0.25,
+      "Text": "Etiket",
+      "FontFamily": "Segoe UI",
+      "Bold": false,
+      "HumanReadable": true,
+      "Image": null
+    }
+  ]
+}
