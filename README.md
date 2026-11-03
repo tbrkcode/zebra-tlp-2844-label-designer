@@ -1,5 +1,18 @@
 # Zebra TLP 2844 Label Designer
 
+## Download and run on Windows 11
+
+**[Download the EXE](https://github.com/tbrkcode/zebra-tlp-2844-label-designer/releases/download/v0.1.4/ZebraTLP2844LabelDesigner.exe)**
+
+**[Download the complete Windows package with manuals and examples](https://github.com/tbrkcode/zebra-tlp-2844-label-designer/releases/download/v0.1.4/ZebraTLP2844LabelDesigner-0.1.4-Windows11-x64.zip)**
+
+For the complete package, extract the ZIP, open `ZebraTLP2844LabelDesigner-0.1.4`, then double-click `ZebraTLP2844LabelDesigner.exe`.
+
+Türkçe: Programı açmak için yukarıdaki EXE bağlantısını kullanın. Tam paketi indirirseniz ZIP'i çıkartın ve içindeki klasörde `ZebraTLP2844LabelDesigner.exe` dosyasını açın.
+
+The `source.zip`, GitHub **Source code** downloads and **Code → Download ZIP** contain development files. Use the Windows download above to run the application.
+
+
 An offline, English-first Windows label designer for the **Zebra TLP 2844 EPL2**.
 Written in C#/.NET 10 LTS, WPF and MVVM, with SQLite storage. GPL-3.0-only.
 
@@ -9,7 +22,7 @@ and Windows cross-compilation were performed on Linux. The WPF window and a real
 Windows 11/USB TLP 2844 were not available to run here. No physical print test is
 claimed. See `docs/TEST_REPORT.md` for the exact evidence and limitations.
 
-Download the Windows application from [Releases](https://github.com/tbrkey/zebra-tlp-2844-label-designer/releases).
+Download the Windows application from [Releases](https://github.com/tbrkcode/zebra-tlp-2844-label-designer/releases).
 
 ## Getting started
 
